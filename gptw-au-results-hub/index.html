@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trust Index results guide | Great Place To Work Australia</title>
+<meta name="description" content="Find the reading that helps for each of the 60 Trust Index statements, flag your priorities and bring a shortlist to your results debrief.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Preview stand-ins named by the Great Place To Work Web System: Figtree for Gilroy, Newsreader italic for Frame Head, IBM Plex Mono for Ballinger Mono. On the live site the licensed faces load first. -->
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* ===== Tokens: Great Place To Work Web System (tokens.css) ===== */
+:root{
+  --brand-red:#ff1628;--brand-red-dark:#a3001a;--white:#fff;--brand-black:#11131c;
+  --gray-1:#f5f8f6;--gray-2:#edf1ef;--gray-3:#dee5e4;--gray-4:#c4cccc;--gray-5:#a6aeb2;--gray-6:#879298;
+  --gray-7:#69737a;--gray-8:#555e66;--gray-9:#444c54;--gray-10:#32383f;--gray-11:#22262d;
+  --text:var(--brand-black);--text-muted:var(--gray-8);--surface:var(--white);--surface-soft:var(--gray-1);
+  --border:var(--gray-3);--border-control:var(--gray-6);--focus:#2b6cff;
+  --font:"Gilroy","Figtree","Century Gothic",system-ui,sans-serif;
+  --accent:"Frame Head","Newsreader",Georgia,serif;
+  --mono:"Ballinger Mono","IBM Plex Mono",ui-monospace,monospace;
+  --wrap:1180px;--gutter:32px;--nav-h:72px;--sub-h:56px;
+  --t-fast:120ms;--t-ui:200ms;--t-enter:400ms;--ease:cubic-bezier(.2,.7,.2,1);
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:calc(var(--nav-h) + var(--sub-h) + 16px)}
+body{font:400 16px/1.4 var(--font);color:var(--text);background:var(--surface);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+ul{list-style:none}
+a{color:inherit}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+::selection{background:var(--brand-red);color:#fff}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--gutter)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== Type ===== */
+.tag{display:inline-block;font:500 13px/16px var(--font);border:1px solid currentColor;border-radius:999px;padding:7px 14px}
+.h1{font:400 64px/66px var(--font);letter-spacing:-.035em}
+.h2{font:400 52px/55px var(--font);letter-spacing:-.025em}
+.h2 .r{color:var(--brand-red)}
+.h5{font:600 20px/26px var(--font);letter-spacing:-.01em}
+.lead{font:500 22px/30px var(--font);letter-spacing:-.01em;max-width:540px}
+.acc{font-family:var(--accent);font-style:italic;font-weight:400;letter-spacing:-.01em}
+.data{font:400 13px/16px var(--mono);letter-spacing:.02em}
+.link{font:600 16px/22px var(--font);color:var(--brand-black);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--brand-red)}
+.link:hover{color:var(--brand-red)}
+
+/* ===== Buttons: square, uppercase by style ===== */
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;gap:10px;height:48px;padding:0 32px;border:1px solid var(--brand-red);border-radius:0;background:var(--brand-red);color:#fff;font:600 14px/16px var(--font);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background var(--t-fast),color var(--t-fast),border-color var(--t-fast)}
+.btn:hover{background:var(--brand-black);border-color:var(--brand-black)}
+.btn--white{background:#fff;color:var(--brand-black);border-color:#fff}
+.btn--white:hover{background:var(--brand-black);color:#fff;border-color:var(--brand-black)}
+.btn--ghost-w{background:transparent;color:#fff;border-color:#fff}
+.btn--ghost-w:hover{background:#fff;color:var(--brand-black);border-color:#fff}
+.btn--sm{height:40px;padding:0 20px;font-size:13px}
+.textbtn{background:none;border:0;cursor:pointer;font:600 14px/20px var(--font);text-decoration:underline;text-underline-offset:4px;min-height:44px;padding:0 4px}
+
+/* ===== Announce + nav ===== */
+.announce{background:var(--brand-red);color:#fff;text-align:center;font:600 16px/22px var(--font);padding:10px 16px}
+.announce a{color:#fff;text-underline-offset:3px}
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--border);height:var(--nav-h);transition:height var(--t-ui) var(--ease)}
+.top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.top img.lg{width:46px;height:46px;display:block;transition:width var(--t-ui),height var(--t-ui)}
+.top nav{display:flex;gap:26px;align-items:center;font:500 15px/20px var(--font)}
+.top nav a:not(.btn){text-decoration:none;padding:12px 0}
+.top nav a:not(.btn):hover,.top nav a[aria-current]{color:var(--brand-red)}
+.top.compact{--nav-h:56px}
+.top.compact img.lg{width:38px;height:38px}
+
+/* ===== Hero (HeroSplit) ===== */
+.hero{padding:80px 0 72px;background:var(--surface)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:start}
+.hero .tag{margin-bottom:20px}
+.hero .h1{margin-bottom:20px;max-width:12ch}
+.hero .lead{color:var(--text-muted);margin-bottom:32px}
+
+.search{position:relative;max-width:620px}
+.search svg{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:22px;height:22px;stroke:var(--brand-black);fill:none;stroke-width:2}
+.search input{width:100%;height:60px;border:1px solid var(--border-control);border-radius:0;background:#fff;padding:0 120px 0 54px;font:400 18px/1 var(--font);color:var(--text);transition:border-color var(--t-ui)}
+.search input::placeholder{color:var(--gray-7)}
+.search input:hover{border-color:var(--brand-black)}
+.search input:focus{outline:none;border-color:var(--brand-black);box-shadow:inset 0 0 0 1px var(--brand-black)}
+.search input:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.search input::-webkit-search-cancel-button{display:none}
+.search .kbd{position:absolute;right:16px;top:50%;transform:translateY(-50%);font:400 12px/1 var(--mono);color:var(--gray-7);border:1px solid var(--border);padding:5px 8px}
+.search .clear{position:absolute;right:8px;top:50%;transform:translateY(-50%);height:44px;padding:0 12px;background:none;border:0;cursor:pointer;font:600 13px/1 var(--font);letter-spacing:.12em;text-transform:uppercase;display:none}
+.search.has .clear{display:block}.search.has .kbd{display:none}
+.egs{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px;max-width:620px}
+.egs span{font-size:14px;color:var(--text-muted);margin-right:4px}
+.chip{height:36px;padding:0 14px;border:1px solid var(--border);border-radius:0;background:#fff;cursor:pointer;font:500 14px/1 var(--font);transition:border-color var(--t-fast),background var(--t-fast),color var(--t-fast)}
+.chip:hover{border-color:var(--brand-black)}
+.chip[aria-pressed="true"]{background:var(--brand-black);border-color:var(--brand-black);color:#fff}
+.facts{display:flex;gap:32px;margin-top:40px;padding-top:24px;border-top:1px solid var(--border);max-width:620px}
+.facts div{font:400 14px/20px var(--font);color:var(--text-muted)}
+.facts b{display:block;font:500 40px/44px var(--font);letter-spacing:-.025em;color:var(--brand-red)}
+
+/* hero panel: DataBars on a card */
+.panel{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px}
+.panel .h5{margin-bottom:6px}
+.panel>p{color:var(--text-muted);margin-bottom:24px}
+.opps{display:grid;gap:4px}
+.opp{display:grid;grid-template-columns:1fr;gap:8px;text-align:left;width:100%;background:none;border:0;border-top:1px solid var(--border);padding:16px 0;cursor:pointer}
+.opp:hover .q{color:var(--brand-red)}
+.opp .q{font:500 16px/22px var(--font);transition:color var(--t-fast)}
+.opp .q::before{content:"\201C"}.opp .q::after{content:"\201D"}
+.opp .meta{display:grid;grid-template-columns:1fr 56px;gap:12px;align-items:center}
+.opp .meta b{font:500 13px/1 var(--mono);text-align:right}
+.bar{display:block;height:10px;background:var(--gray-2);position:relative;overflow:hidden}
+.bar::after{content:"";position:absolute;inset:0 auto 0 0;width:0;background:var(--gray-6);transition:width 800ms var(--ease)}
+.bar.us::after{background:linear-gradient(90deg,var(--brand-red-dark),var(--brand-red));transition-delay:120ms}
+.grow .bar::after{width:var(--w)}
+.panel .src{margin-top:16px;color:var(--gray-7)}
+
+/* ===== Sub nav (sticky tool bar) ===== */
+.sub{position:sticky;top:var(--nav-h);z-index:30;background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);transition:top var(--t-ui) var(--ease)}
+.sub .wrap{display:flex;align-items:stretch;gap:16px;height:var(--sub-h)}
+.sub nav{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;flex:1}
+.sub nav::-webkit-scrollbar{display:none}
+.sub nav a{display:flex;align-items:center;gap:8px;padding:0 16px;font:600 14px/1 var(--font);color:var(--gray-8);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap;transition:color var(--t-fast),border-color var(--t-ui)}
+.sub nav a:hover{color:var(--brand-black)}
+.sub nav a.on{color:var(--brand-black);border-bottom-color:var(--brand-red)}
+.sub nav a .ct{font:500 12px/1 var(--mono);color:#fff;background:var(--brand-black);padding:4px 6px;display:none}
+.sub nav a .ct.show{display:inline-block}
+.sub nav a.dim-hide{display:none}
+.sub .tools{display:flex;align-items:center;gap:8px;white-space:nowrap}
+.status{font:400 13px/1 var(--mono);color:var(--gray-8);white-space:nowrap}
+
+/* ===== Dimension sections ===== */
+.dim{padding:96px 0;background:var(--surface)}
+.dim.soft{background:var(--surface-soft)}
+.dim.hide{display:none}
+.dhead{display:grid;grid-template-columns:1fr 420px;gap:56px;align-items:start;margin-bottom:48px}
+.dhead .tag{margin-bottom:20px}
+.dtitle{display:flex;align-items:center;gap:16px;margin-bottom:20px}
+.dtitle svg{width:48px;height:48px;flex:0 0 auto}
+.dhead p.intro{font:400 18px/26px var(--font);color:var(--text-muted);max-width:60ch}
+.dhead .stat{background:#fff;border:1px solid var(--border);border-radius:6px;padding:28px}
+.dim.soft .dhead .stat{border-color:transparent}
+.stat .row2{display:grid;grid-template-columns:136px 1fr 52px;gap:12px;align-items:center;margin-bottom:10px;font:400 13px/16px var(--mono);color:var(--gray-8)}
+.stat .row2.us{color:var(--brand-black)}
+.stat .row2 b{font-weight:500;text-align:right}
+.stat .cap{font:400 15px/21px var(--font);color:var(--text-muted);margin-top:16px}
+.stat .cap strong{color:var(--brand-black);font-weight:600}
+.stat .big{font:500 56px/60px var(--font);letter-spacing:-.025em;color:var(--brand-red);margin-bottom:8px}
+.stat .big sup,.facts sup,.fn{font-size:.45em;vertical-align:super;line-height:0}
+.fnref{font:500 11px/0 var(--mono);vertical-align:super;color:var(--gray-8);text-decoration:none;margin-left:2px}
+
+/* focus areas (FaqList pattern, square) */
+.focus{border-top:1px solid var(--brand-black)}
+.focus+.focus{border-top-color:var(--border)}
+.focus.hide{display:none}
+.fhead{width:100%;display:grid;grid-template-columns:1fr auto 28px;gap:24px;align-items:center;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer}
+.fhead h3{font:600 20px/26px var(--font);letter-spacing:-.01em;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px}
+.fhead h3 .desc{font:400 16px/22px var(--font);color:var(--text-muted);letter-spacing:0}
+.fhead .n{font:400 13px/1 var(--mono);color:var(--gray-8);white-space:nowrap}
+.fhead .n em{font-style:normal;color:var(--brand-red)}
+.fhead .pm{font:500 28px/24px var(--font);color:var(--brand-red);text-align:center}
+.fhead[aria-expanded="true"] .pm::before{content:"\2212"}
+.fhead[aria-expanded="false"] .pm::before{content:"+"}
+.fhead:hover h3{color:var(--brand-red)}
+.fhead:hover h3 .desc,.fhead:hover h3 .mod{color:var(--text-muted)}
+.mod{font:500 12px/1 var(--font);border:1px solid var(--gray-6);color:var(--gray-8);border-radius:999px;padding:5px 10px;align-self:center}
+.fbody{padding:0 0 24px}
+.fbody[hidden]{display:none}
+.fbody.open{animation:fade var(--t-ui) var(--ease)}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+.dim:last-of-type .focus:last-child,.focuses{border-bottom:1px solid var(--border)}
+
+.stmt{display:grid;grid-template-columns:44px 1fr 320px;gap:16px 24px;align-items:center;padding:16px 16px 16px 12px;border-top:1px solid var(--gray-2);background:#fff;position:relative;transition:background var(--t-fast)}
+.dim.soft .stmt{background:var(--surface-soft)}
+.stmt:first-child{border-top:0}
+.stmt.hide{display:none}
+.stmt::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:transparent;transition:background var(--t-ui)}
+.stmt.on::before{background:var(--brand-red)}
+.stmt.on{background:var(--gray-1)}
+.dim.soft .stmt.on{background:#fff}
+.chk{appearance:none;-webkit-appearance:none;width:24px;height:24px;border:1px solid var(--border-control);border-radius:0;background:#fff;cursor:pointer;position:relative;justify-self:center;transition:background var(--t-fast),border-color var(--t-fast)}
+.chk:hover{border-color:var(--brand-black)}
+.chk:checked{background:var(--brand-black);border-color:var(--brand-black)}
+.chk:checked::after{content:"";position:absolute;left:7px;top:3px;width:6px;height:11px;border-right:2px solid #fff;border-bottom:2px solid #fff;transform:rotate(42deg)}
+.stmt label{font:400 17px/24px var(--font);cursor:pointer}
+.stmt label::before{content:"\201C"}.stmt label::after{content:"\201D"}
+.stmt mark{background:var(--gray-3);color:inherit;box-shadow:inset 0 -2px 0 var(--brand-red)}
+.res{justify-self:end;text-align:right;display:grid;gap:4px;justify-items:end}
+.res .k{font:400 12px/16px var(--mono);color:var(--gray-7)}
+.res a.go{display:inline-flex;gap:10px;align-items:baseline;font:600 15px/20px var(--font);text-decoration:none;color:var(--brand-black)}
+.res a.go span{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--brand-red)}
+.res a.go i{font-style:normal;color:var(--brand-red);transition:transform var(--t-fast)}
+.res a.go:hover{color:var(--brand-red)}
+.res a.go:hover i{transform:translateX(3px)}
+.res .soon{font:500 12px/1 var(--font);border:1px solid var(--brand-black);border-radius:999px;padding:5px 10px}
+.res .ttl{font:600 15px/20px var(--font)}
+.res .alt{font:400 14px/20px var(--font);color:var(--text-muted)}
+.res .alt a{color:var(--brand-black);text-underline-offset:3px;text-decoration-color:var(--brand-red)}
+
+.next{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;margin-top:40px;background:#fff;border:1px solid var(--border);border-radius:6px;padding:28px 32px}
+.dim.soft .next{border-color:transparent}
+.next b{display:block;font:600 20px/26px var(--font);letter-spacing:-.01em;margin-bottom:6px}
+.next p{color:var(--text-muted);max-width:62ch}
+
+.empty{display:none;padding:96px 0;text-align:center;background:var(--surface-soft)}
+.empty.show{display:block}
+.empty .h5{margin-bottom:8px}
+.empty p{color:var(--text-muted);margin-bottom:24px}
+
+/* ===== Closer ===== */
+.closer{background:var(--brand-red);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+.closer::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(104deg,rgba(255,255,255,.07) 0 1px,transparent 1px 11px);-webkit-mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);pointer-events:none}
+.closer .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end}
+.closer .tag{color:var(--brand-black);border-color:var(--brand-black);margin-bottom:20px}
+.closer h2{font:400 72px/72px var(--font);letter-spacing:-.035em}
+.closer h2 .acc{color:var(--brand-black);font-size:1.06em}
+.closer p{font:500 20px/28px var(--font);max-width:520px;margin-top:20px}
+.closer .btns{display:flex;flex-direction:column;gap:12px;align-items:stretch;max-width:340px;justify-self:end;width:100%}
+
+/* ===== Footer ===== */
+.foot{background:var(--brand-black);color:var(--gray-4);padding:64px 0 40px;font:400 14px/20px var(--font)}
+.foot .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;margin-bottom:48px}
+.foot b{display:block;color:#fff;font-weight:600;margin-bottom:12px}
+.foot a{display:block;margin-bottom:8px;text-decoration:none}
+.foot a:hover{color:#fff;text-decoration:underline}
+.foot .notes{border-top:1px solid var(--gray-10);padding-top:24px;display:grid;gap:8px;max-width:900px}
+.foot .notes p{color:var(--gray-5)}
+.foot .notes sup{color:#fff;margin-right:4px}
+.foot .tbc{font:500 11px/1 var(--mono);background:var(--gray-3);color:var(--brand-black);padding:3px 6px;margin-left:6px;vertical-align:1px}
+
+/* ===== Shortlist tray ===== */
+#tray{position:fixed;left:0;right:0;bottom:0;z-index:50;background:var(--brand-black);color:#fff;transform:translateY(110%);transition:transform var(--t-ui) var(--ease);border-top:1px solid var(--gray-10)}
+#tray.up{transform:none}
+#tray .bar2{display:flex;align-items:center;gap:16px;min-height:68px;padding-top:10px;padding-bottom:10px;flex-wrap:wrap}
+#tray .ttl{font:600 16px/1 var(--font)}
+#tray .num{font:500 13px/1 var(--mono);background:var(--brand-red);color:var(--brand-black);padding:5px 8px}
+#tray .sp{flex:1}
+#tray .textbtn{color:#fff}
+#tray .textbtn:hover{color:var(--gray-4)}
+#panel{display:none;border-top:1px solid var(--gray-10);max-height:46vh;overflow-y:auto}
+#tray.expanded #panel{display:block}
+#panel .inner{padding-top:24px;padding-bottom:32px}
+#panel .hint{color:var(--gray-4);margin-bottom:16px}
+.pgrp{margin-bottom:16px}
+.pgrp h4{font:400 12px/16px var(--mono);letter-spacing:.04em;color:var(--gray-5);text-transform:uppercase;margin-bottom:4px}
+.pitem{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:center;padding:12px 0;border-top:1px solid var(--gray-10)}
+.pitem q{font:400 16px/22px var(--font);color:#fff}
+.pitem small{display:block;font:400 14px/20px var(--font);color:var(--gray-4);margin-top:4px}
+.pitem small a{color:#fff;text-underline-offset:3px;text-decoration-color:var(--brand-red)}
+.pitem .rm{background:none;border:1px solid var(--gray-9);color:var(--gray-4);width:44px;height:44px;cursor:pointer;font:400 20px/1 var(--font)}
+.pitem .rm:hover{border-color:#fff;color:#fff}
+.toast{position:fixed;left:50%;bottom:92px;transform:translate(-50%,16px);opacity:0;z-index:60;background:#fff;color:var(--brand-black);border:1px solid var(--brand-black);padding:12px 18px;font:600 14px/1 var(--font);transition:opacity var(--t-ui),transform var(--t-ui) var(--ease);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+body.tray-up .foot{padding-bottom:120px}
+
+/* ===== Entering content ===== */
+.rv{opacity:0;transform:translateY(16px);transition:opacity var(--t-enter) var(--ease),transform var(--t-enter) var(--ease)}
+.rv.in{opacity:1;transform:none}
+.no-js .rv{opacity:1;transform:none}
+
+/* ===== Print: the action plan only ===== */
+#plan{display:none}
+@media print{
+  @page{margin:18mm}
+  body>*:not(#plan){display:none!important}
+  #plan{display:block;font:400 11pt/1.45 var(--font);color:#000}
+  #plan h1{font:600 22pt/1.1 var(--font);margin-bottom:4pt}
+  #plan .sub2{color:#444;margin-bottom:16pt}
+  #plan table{width:100%;border-collapse:collapse}
+  #plan th{text-align:left;font:600 9pt/1.2 var(--font);text-transform:uppercase;letter-spacing:.08em;border-bottom:1.5pt solid #000;padding:6pt 6pt 6pt 0}
+  #plan td{vertical-align:top;border-bottom:.75pt solid #bbb;padding:8pt 6pt 14pt 0}
+  #plan td.d{width:16%;font-weight:600}
+  #plan td.blank{width:24%}
+  #plan .url{color:#555;font-size:9pt;word-break:break-all}
+  #plan .fine{margin-top:16pt;color:#555;font-size:9pt}
+}
+
+/* ===== Responsive ===== */
+@media (max-width:1080px){
+  .top nav a:not(.btn){display:none}
+  .hero .wrap,.dhead,.closer .wrap{grid-template-columns:1fr}
+  .closer .btns{justify-self:start}
+  .stmt{grid-template-columns:44px 1fr}
+  .res{grid-column:2;justify-self:start;text-align:left;justify-items:start}
+}
+@media (max-width:900px){
+  :root{--gutter:16px}
+  .hero{padding:48px 0 56px}.dim{padding:64px 0}.closer{padding:80px 0}
+  .h1{font-size:40px;line-height:44px}.h2{font-size:34px;line-height:40px}.lead{font-size:18px;line-height:26px}
+  .closer h2{font-size:42px;line-height:46px}
+  .dtitle svg{width:36px;height:36px}
+  .dhead{margin-bottom:32px;gap:32px}
+  .facts{gap:20px}.facts b{font-size:32px;line-height:36px}
+  .sub .tools .status{display:none}
+  .next{grid-template-columns:1fr;padding:24px}
+  .foot .cols{grid-template-columns:1fr 1fr}
+  .fhead{grid-template-columns:1fr 24px;gap:12px}
+  .fhead .n{grid-column:1;grid-row:2}
+  .fhead .pm{grid-column:2;grid-row:1/3}
+  .stmt{padding:14px 8px 14px 4px;gap:10px 12px}
+  .stmt label{font-size:16px;line-height:22px}
+  #tray .bar2{gap:0 12px;min-height:60px}
+  #tray #print{display:none}
+  #tray .btn{height:40px;padding:0 16px;font-size:12px;letter-spacing:.1em}
+}
+@media (max-width:560px){
+  .search input{padding-right:16px}.search .kbd{display:none}
+  .stat .row2{grid-template-columns:112px 1fr 48px;font-size:12px}
+  .closer .btns{max-width:none}
+  .closer .btn{width:100%}
+  .panel{padding:24px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{transition-duration:0s!important;animation:none!important}
+  .rv{opacity:1;transform:none}
+  .bar::after{width:var(--w)!important}
+}
+</style>
+</head>
+<body class="no-js">
+
+<div class="announce">Your Trust Index™ results are ready in Emprising®. <a href="#">Open your dashboard</a></div>
+
+<header class="top" id="top"><div class="wrap">
+  <a href="#" aria-label="Great Place To Work® Australia home"><img class="lg" src="data:image/webp;base64,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" alt="Great Place To Work®"></a>
+  <nav aria-label="Main">
+    <a href="#">Employee survey</a><a href="#">Certification™</a><a href="#">Best Workplaces™</a><a href="#">Culture consulting</a><a href="#" aria-current="page">Resources</a>
+    <a class="btn btn--sm" href="#closer">Talk to a consultant</a>
+  </nav>
+</div></header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero" aria-labelledby="h1"><div class="wrap">
+  <div>
+    <span class="tag rv">Your Trust Index™ results</span>
+    <h1 class="h1 rv" id="h1">Start with your biggest opportunity.</h1>
+    <p class="lead rv">Search any of the 60 Trust Index™ statements to find the reading that helps. Flag the ones that matter and bring your shortlist to your results debrief.</p>
+
+    <div class="rv">
+      <div class="search" id="searchbox">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 L21 21"/></svg>
+        <label class="sr" for="q">Search the survey statements</label>
+        <input id="q" type="search" placeholder="Search a statement or topic" autocomplete="off" aria-describedby="status">
+        <span class="kbd" aria-hidden="true">Press /</span>
+        <button class="clear" id="clearq" type="button">Clear</button>
+      </div>
+      <div class="egs" role="group" aria-label="Example searches">
+        <span>Try</span>
+        <button class="chip" type="button" data-t="pay">pay</button>
+        <button class="chip" type="button" data-t="recognition">recognition</button>
+        <button class="chip" type="button" data-t="favouritism">favouritism</button>
+        <button class="chip" type="button" data-t="time off">time off</button>
+        <button class="chip" type="button" data-t="onboarding">onboarding</button>
+        <button class="chip" type="button" data-t="promotions">promotions</button>
+      </div>
+    </div>
+
+    <div class="facts rv" aria-label="What the survey covers">
+      <div><b>60</b>statements</div>
+      <div><b>5</b>dimensions</div>
+      <div><b>15</b>focus areas</div>
+    </div>
+  </div>
+
+  <aside class="panel rv" aria-labelledby="opp-h">
+    <h2 class="h5" id="opp-h">Where Australian workplaces can grow most.</h2>
+    <p>The four lowest-scoring statements nationally. Select one to see the reading for it.</p>
+    <div class="opps" id="opps"></div>
+    <p class="src data">% positive, all Australian respondents, 2026 <a class="fnref" href="#fn1">1</a></p>
+  </aside>
+</div></section>
+
+<!-- ============ STICKY SUB NAV ============ -->
+<div class="sub" id="sub"><div class="wrap">
+  <nav aria-label="Dimensions" id="dimnav"></nav>
+  <div class="tools">
+    <span class="status" id="status" aria-live="polite">60 statements</span>
+    <button class="textbtn" type="button" id="expandall">Open all</button>
+  </div>
+</div></div>
+
+<div id="dims"></div>
+
+<div class="empty" id="empty"><div class="wrap">
+  <h2 class="h5">Try a single word.</h2>
+  <p>Words such as pay, welcome, safe or promotions match the most statements.</p>
+  <button class="btn" type="button" id="emptyclear">Show all statements</button>
+</div></div>
+
+<!-- ============ CLOSER ============ -->
+<section class="closer" id="closer" aria-labelledby="closer-h"><div class="wrap">
+  <div>
+    <span class="tag">Your results debrief</span>
+    <h2 id="closer-h">Turn your shortlist into <span class="acc">clear priorities.</span></h2>
+    <p>Send us the statements you flagged. A consultant will compare them with the Best Workplaces™ benchmark for your size and agree where to focus first.</p>
+  </div>
+  <div class="btns">
+    <a class="btn btn--white" href="#">Talk to a consultant</a>
+    <button class="btn btn--ghost-w" type="button" id="closer-email">Email my shortlist</button>
+  </div>
+</div></section>
+</main>
+
+<footer class="foot"><div class="wrap">
+  <div class="cols">
+    <div><b>Great Place To Work® Australia</b><p>Great Place To Work® is the global authority on workplace culture.</p></div>
+    <div><b>Offerings</b><a href="#">Employee survey</a><a href="#">Certification™</a><a href="#">Best Workplaces™</a><a href="#">Culture consulting</a></div>
+    <div><b>Resources</b><a href="#">Case studies</a><a href="#">Reports</a><a href="#">Blog</a><a href="#">Newsletter</a></div>
+    <div><b>Company</b><a href="#">Our methodology</a><a href="#">How to apply</a><a href="#">Contact us</a></div>
+  </div>
+  <div class="notes">
+    <p id="fn1"><sup>1</sup>Great Place To Work® Australia 2026 Insights, data updated 10 September 2026. Typical Australian workplaces are respondents outside the Best Workplaces™.<span class="tbc">TBC · verify figures with Insights owner</span></p>
+    <p id="fn2"><sup>2</sup>Published figures, greatplacetowork.com.au/certification, verified 6 August 2026.</p>
+    <p id="fn3"><sup>3</sup>Statements appear exactly as worded in the Trust Index™ survey. These resources support your action planning. A survey score, Certification™ or a place on a Best Workplaces™ list is earned through your employees' responses.</p>
+    <p>We acknowledge the Traditional Owners of the land where we work and live, and pay our respects to Elders past, present and emerging. © 2026 Great Place To Work® Institute.</p>
+  </div>
+</div></footer>
+
+<!-- ============ SHORTLIST TRAY ============ -->
+<div id="tray" role="region" aria-label="Your shortlist">
+  <div class="wrap bar2">
+    <span class="ttl">Your shortlist</span><span class="num" id="num">0</span>
+    <span class="sp"></span>
+    <button class="textbtn" type="button" id="toggle" aria-expanded="false" aria-controls="panel">View</button>
+    <button class="textbtn" type="button" id="copy">Copy</button>
+    <button class="textbtn" type="button" id="print">Print action plan</button>
+    <button class="textbtn" type="button" id="clearall">Clear</button>
+    <button class="btn btn--sm btn--white" type="button" id="email">Email my shortlist</button>
+  </div>
+  <div id="panel"><div class="wrap inner">
+    <p class="hint">Saved in this browser, so it's still here when you come back. Copy it into your action plan, or email it to your consultant before your debrief.</p>
+    <div id="plist"></div>
+  </div></div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<section id="plan" aria-hidden="true"></section>
+
+<script>
+/* ============ DATA ============
+   Statement wording is verbatim from the Trust Index survey (US spelling).
+   Row: [statement, resource title, resource url, keywords] or
+        [statement, planned title, null, keywords, interim title, interim url] */
+const B='https://greatplacetowork.com.au/blog/';
+const DIMS=[
+{id:'credibility',name:'Credibility',n:14,
+ icon:'<path d="M6 30 L20 8 L34 30" stroke="#ff1628" stroke-width="3"/><path d="M12 30 h16" stroke="#11131c" stroke-width="3"/>',
+ intro:'Credibility covers how information reaches your people, how decisions get explained, and whether what leaders say matches what follows. Three focus areas sit underneath it: communication, competence and integrity.',
+ stat:{bw:93.1,typ:56.8,fn:1,cap:'<strong>The widest gap of the five dimensions.</strong> Certified™ organisations sit at 84.3%.'},
+ next:['Sharing your results is part of this dimension.','How you communicate the findings, and what you commit to next, shapes how people answer these statements next year.','How to share your results',B+'how-to-share-employee-survey-results/'],
+ focus:[
+  {name:'Communication',desc:'How information travels, and how questions get answered.',rows:[
+   ['Management keeps me informed about important issues and changes.','Communication for a decentralised workforce',B+'top-communication-practices-for-a-decentralised-workforce-lessons-from-kennards-hire/','updates information change transparency'],
+   ['Management is approachable, easy to talk with.','9 leadership behaviours that build trust',B+'9-leadership-behaviors-that-build-great-workplaces/','leaders boss open door approachable'],
+   ['I can ask management any reasonable question and get a straight answer.','Creating a culture of transparency',B+'creating-a-culture-of-transparency-how-open-communication-can-improve-business-efficiency/','honest answers transparency questions'],
+   ['Management makes its expectations clear.','The importance of goal setting at work',B+'the-importance-of-goal-setting-in-the-workplace/','goals expectations clarity objectives']]},
+  {name:'Competence',desc:'Confidence in direction, coordination and decision-making.',rows:[
+   ['Management has a clear view of where the organization is going and how to get there.','How leaders connect people to purpose',B+'how-leaders-connect-employees-to-purpose/','strategy vision direction purpose'],
+   ['Management is competent at running the business.','6 essential leadership skills',B+'6-essential-leadership-skills-for-workplace-success/','leadership skills capability'],
+   ['Management does a good job of assigning and coordinating people.','Give middle managers the data they need',B+'give-your-middle-managers-the-data-they-need-to-succeed/','workload coordination middle managers resourcing'],
+   ['Management trusts people to do a good job without watching over their shoulders.','Autonomy and employee empowerment',B+'the-importance-of-employee-empowerment-how-giving-team-members-autonomy-can-boost-productivity/','micromanage autonomy trust flexibility'],
+   ['Management hires people who fit in well here.','Hiring for culture add',null,'hiring recruitment culture fit','The rise of employer branding',B+'the-rise-of-employer-branding/'],
+   ['Our executives fully embody the best characteristics of our company.','Accenture’s CEO on leading reinvention',B+'world-best-workplaces-accenture-ceo-julie-sweet-leader-reinventor/','executives ceo leaders values role model']]},
+  {name:'Integrity',desc:'Consistency between what is said and what follows.',rows:[
+   ['Management’s actions match its words.','Aussie workers on favouritism and empty promises',B+'aussie-workers-call-out-favouritism-and-empty-promises-from-leadership/','promises consistency walk the talk'],
+   ['Management delivers on its promises.','12 signs you are losing employee trust',B+'losing-the-trust-of-your-employees/','promises trust follow through'],
+   ['Management is honest and ethical in its business practices.','How great employers build a culture of trust',B+'how-great-employers-build-a-culture-of-trust/','ethics honesty integrity'],
+   ['I believe management would lay people off only as a last resort.','Sustaining trust through a downturn',B+'how-your-managers-can-sustain-trust-during-an-economic-downturn/','layoffs redundancy job security restructure']]},
+  {name:'Optional module',module:true,desc:'Confidence in Executive Team, if you added it.',rows:[
+   ['How much confidence do you have in your executive team’s judgement?','Confidence in leaders fuels innovation',B+'worlds-best-workplaces-innovation-culture/','executives confidence judgement leaders']]}
+ ]},
+{id:'respect',name:'Respect',n:15,
+ icon:'<circle cx="20" cy="15" r="7" stroke="#11131c" stroke-width="3"/><path d="M7 34c0-7 6-11 13-11s13 4 13 11" stroke="#ff1628" stroke-width="3"/>',
+ intro:'Respect covers recognition, development, being asked before decisions are made, and whether the job leaves room for a life. It is the largest of the five dimensions, with 15 statements across support, collaborating and caring.',
+ stat:{bw:92.7,typ:57.4,fn:1,cap:'<strong>Two of Australia’s four lowest-scoring statements sit here:</strong> unique benefits at 74.0% and involvement in decisions at 75.5%.'},
+ next:['See every team clearly.','Segmented reporting splits every Respect statement by team, site and tenure, and compares each group with its own result last year.','Ask about your segmented view','#'],
+ focus:[
+  {name:'Support',desc:'Recognition, development and the tools to do the job.',rows:[
+   ['Management shows appreciation for good work and extra effort.','Building a recognition programme that works',B+'creating-a-culture-of-recognition/','recognition appreciation thanks reward'],
+   ['Everyone has an opportunity to get special recognition.','What to know about recognition programmes',B+'workplace-recognition-programs/','recognition awards reward fairness'],
+   ['I am offered training or development to further myself professionally.','Encouraging continuous learning',B+'fostering-a-growth-mindset-in-the-workplace-how-to-encourage-continuous-learning-and-development/','training development learning career growth'],
+   ['I am given the resources and equipment to do my job.','Better work design reduces burnout',B+'sydney-childrens-hospitals-foundation-strategy/','tools equipment resources workload burnout'],
+   ['We celebrate people who try new and better ways of doing things, regardless of the outcome.','Building more innovative teams',B+'can-ai-help-leaders-build-better-more-innovative-teams/','innovation ideas experiment'],
+   ['Management recognizes honest mistakes as part of doing business.','How to cultivate psychological safety',B+'how-to-cultivate-psychological-safety-in-your-workplace/','mistakes failure psychological safety blame']]},
+  {name:'Collaborating',desc:'Being asked, and seeing what happens next.',rows:[
+   ['Management genuinely seeks and responds to suggestions and ideas.','Amplifying employee voice',B+'employee-voice-high-trust-culture-for-all/','ideas suggestions voice feedback listening'],
+   ['Management involves people in decisions that affect their jobs or work environment.','Using feedback to build a better workplace',B+'use-employee-feedback-better-workplace-2025/','decisions consultation involvement change']]},
+  {name:'Caring',desc:'Work-life balance, safety and genuine interest in people.',rows:[
+   ['People are encouraged to balance their work life and their personal life.','What the right to disconnect reveals',B+'what-the-right-to-disconnect-reveals-about-culture/','balance flexibility hours burnout disconnect wellbeing'],
+   ['I am able to take time off from work when I think it’s necessary.','Taking the stress out of time off',B+'take-the-stress-out-of-time-off-work-top-tips-for-employers/','leave holidays time off absence'],
+   ['Management shows a sincere interest in me as a person, not just an employee.','How caring leaders create high performance',B+'how-caring-leaders-create-high-performance-workplaces/','care wellbeing human'],
+   ['This is a psychologically and emotionally healthy place to work.','Psychological safety in Australian workplaces','https://greatplacetowork.com.au/employee-experience/psychological-safety-in-australian-workplaces/','mental health wellbeing psychosocial stress burnout'],
+   ['This is a physically safe place to work.','Positive duty and workplace safety obligations',B+'positive-duty-at-work-psychosocial-risks-hazards-and-compliance/','safety whs hazards injury'],
+   ['We have special and unique benefits here.','Benefits strategies from the Best Workplaces™',B+'employee-benefits-strategy-best-workplaces/','benefits perks evp'],
+   ['Our facilities contribute to a good working environment.','What your workspace says about who you value',null,'office facilities workspace hybrid','Successful hybrid work models',B+'successful-hybrid-work-models-have-these-5-things-in-common/']]},
+  {name:'Optional module',module:true,desc:'Meaningful Innovation Opportunities, if you added it.',rows:[
+   ['Over the last year, how many meaningful opportunities have you had to develop new and better ways of doing things at work?','6 experiences that lift effort and output',B+'6-proven-experiences-to-boost-employee-productivity-and-effort/','innovation ideas opportunities']]}
+ ]},
+{id:'fairness',name:'Fairness',n:11,
+ icon:'<path d="M20 6 v28" stroke="#11131c" stroke-width="3"/><path d="M8 13 h24" stroke="#11131c" stroke-width="3"/><path d="M8 13 L3 24 h10 Z M32 13 L27 24 h10 Z" stroke="#ff1628" stroke-width="2.6"/>',
+ intro:'Fairness covers pay and profit share, how promotions are decided, and whether people are treated the same regardless of who they are. Its three focus areas are equity, impartiality and justice.',
+ stat:{bw:92.0,typ:56.8,fn:1,cap:'<strong>Australia’s biggest opportunity sits here.</strong> “I feel I receive a fair share of the profits” scores 62.7% nationally, and fair pay 74.6%.'},
+ next:['Read these statements by group.','Your results can be cut by gender, age, tenure and level, which shows how evenly each experience is shared across your workforce.','Request a demographic cut','#'],
+ focus:[
+  {name:'Equity',desc:'Pay, profit share and being treated as a full member.',rows:[
+   ['People here are paid fairly for the work they do.','How pay transparency is changing pay day',B+'closing-the-gap-how-pay-transparency-is-changing-the-future-of-pay-day-for-employees/','pay salary wages remuneration money transparency'],
+   ['I feel I receive a fair share of the profits made by this organization.','How profit sharing builds trust',B+'building-trust-through-equity-how-profit-sharing-fuels-great-place-to-work-cultures/','profit share bonus pay money incentives'],
+   ['I am treated as a full member here regardless of my position.','Unlocking the frontline advantage',B+'building-trust-that-drives-results-unlocking-the-frontline-advantage/','frontline hierarchy status inclusion']]},
+  {name:'Impartiality',desc:'How promotions are decided and how work gets done.',rows:[
+   ['Promotions go to those who best deserve them.','Getting performance management right',B+'how-to-do-performance-management-right/','promotion career performance merit'],
+   ['Managers avoid playing favorites.','Aussie workers call out favouritism',B+'aussie-workers-call-out-favouritism-and-empty-promises-from-leadership/','favouritism bias favourites nepotism'],
+   ['People avoid politicking and backstabbing as ways to get things done.','When your best people fight each other',B+'blog-pvp-culture-in-the-workplace/','politics conflict backstabbing competition']]},
+  {name:'Justice',desc:'Equal treatment, and a process people trust.',rows:[
+   ['People here are treated fairly regardless of their gender.','The three fairness gaps facing Australian women',B+'fair-go-gap-international-womens-day/','gender women equality dei wgea'],
+   ['People here are treated fairly regardless of their race.','Cultural safety in the workplace',B+'cultural-safety-in-the-workplace-fostering-inclusivity-and-empowering-your-team/','race culture ethnicity dei inclusion'],
+   ['People here are treated fairly regardless of their sexual orientation.','Supporting LGBTQ+ employees year round',B+'creating-a-for-all-workplace-how-to-support-lgbtq-employees-beyond-mardi-gras/','lgbtq sexuality dei inclusion'],
+   ['People here are treated fairly regardless of their age.','What employers think about older workers',null,'age older younger dei','Why bullying claims are rising',B+'rise-in-workplace-bullying/'],
+   ['If I am unfairly treated, I believe I’ll be given a fair shake if I appeal.','Why workplace bullying claims are rising',B+'rise-in-workplace-bullying/','appeal complaints grievance bullying process']]},
+  {name:'Optional module',module:true,desc:'Disability, if you added it.',rows:[
+   ['People here are treated fairly regardless of any disabilities (physical, mental, emotional, or others).','Supporting employees with chronic conditions','https://greatplacetowork.com.au/employee-experience/how-great-workplaces-empower-employees-with-chronic-health-conditions/','disability health dei inclusion']]}
+ ]},
+{id:'pride',name:'Pride',n:9,
+ icon:'<path d="M20 5 l4.5 9.5 10.5 1.5 -7.6 7.3 1.8 10.4 -9.2-4.9 -9.2 4.9 1.8-10.4 -7.6-7.3 10.5-1.5Z" stroke="#ff1628" stroke-width="2.8"/>',
+ intro:'Pride covers how people feel about their own work, what their team produces, and the company’s place in the world. Three focus areas sit underneath it: pride in my job, pride in my team and pride in the company.',
+ stat:{big:'85%',fn:2,cmp:[['Certified™',85,true],['Industry average',54,false]],cap:'<strong>of employees at Certified™ workplaces would endorse their company,</strong> against an industry average of 54%.'},
+ next:['Recognition lands inside the building first.','Customers describe the internal effect before the external one, so announce to your people before you promote outside.','Plan your announcement with us','#closer'],
+ focus:[
+  {name:'Pride in my job',desc:'Meaning, contribution and responsibility in the role.',rows:[
+   ['My work has special meaning: this is not “just a job.”','The 5 elements of meaningful work',B+'the-5-elements-of-meaningful-work-in-the-age-of-ai/','meaning purpose'],
+   ['I feel I make a difference here.','Connecting people to purpose',B+'how-leaders-connect-employees-to-purpose/','impact purpose contribution'],
+   ['People here are given a lot of responsibility.','Autonomy and employee empowerment',B+'the-importance-of-employee-empowerment-how-giving-team-members-autonomy-can-boost-productivity/','autonomy responsibility ownership']]},
+  {name:'Pride in my team',desc:'What the team achieves together.',rows:[
+   ['When I look at what we accomplish, I feel a sense of pride.','How employee pride fuels thriving workplaces',B+'workplace-pride-thriving-companies/','pride achievement'],
+   ['People here are willing to give extra to get the job done.','6 experiences that lift discretionary effort',B+'6-proven-experiences-to-boost-employee-productivity-and-effort/','effort productivity discretionary'],
+   ['People here quickly adapt to changes needed for our organization’s success.','Improving resilience across your workforce',B+'4-strategies-for-improving-resilience-across-your-workforce/','change resilience agility restructure']]},
+  {name:'Pride in the company',desc:'Reputation, service and contribution to the community.',rows:[
+   ['I’m proud to tell others I work here.','Employees as brand champions',B+'empower-employees-as-brand-champions/','employer brand advocacy reputation'],
+   ['Our customers would rate the service we deliver as “excellent.”','Employee experience and service',null,'customers service quality','Lessons from MoneyMe and Swisse',B+'how-great-workplace-culture-drives-business-success-lessons-from-moneyme-and-swisse/'],
+   ['I feel good about the ways we contribute to the community.','Corporate giving as an experience driver',B+'corporate-giving-is-top-driver-of-employee-experience-at-the-best-companies-to-work-for-especially-now/','community volunteering giving csr']]},
+  {name:'Optional module',module:true,desc:'ESG, three questions, if you added them.',rows:[
+   ['My organization’s business decisions meaningfully improve society.','ESG at work and employee experience',B+'esg-hr-strategy-business-performance/','esg society purpose'],
+   ['My organization’s business decisions meaningfully improve the environment.','Purpose through environmental stewardship',B+'building-purpose-through-environmental-stewardship-a-strategic-imperative-for-modern-companies/','esg environment sustainability'],
+   ['My organization’s business decisions meaningfully improve human wellbeing.','4 things leaders can do for wellbeing',B+'boost-employee-well-being-psychological-health/','esg wellbeing health']]}
+ ]},
+{id:'camaraderie',name:'Camaraderie',n:8,
+ icon:'<circle cx="13" cy="14" r="6" stroke="#11131c" stroke-width="3"/><circle cx="27" cy="14" r="6" stroke="#ff1628" stroke-width="3"/><path d="M4 33c0-6 4-9 9-9s9 3 9 9M18 33c0-6 4-9 9-9s9 3 9 9" stroke="#11131c" stroke-width="2.4" opacity=".5"/>',
+ intro:'Camaraderie covers being able to be yourself, how new people are welcomed, and whether colleagues look out for each other. Its three focus areas are intimacy, hospitality and community.',
+ stat:{bw:94.9,typ:61.2,fn:1,cap:'<strong>Australia’s strongest dimension.</strong> “When you join the company, you are made to feel welcome” scores 94.6% nationally.'},
+ next:['Compare frontline and office-based teams.','Where people work often shapes how they answer these statements. A site-level view shows each group’s experience.','Compare your sites','#'],
+ focus:[
+  {name:'Intimacy',desc:'Being yourself, and colleagues who look out for each other.',rows:[
+   ['I can be myself around here.','How masking at work drives burnout',B+'how-neurodivergent-masking-drives-employee-burnout-key-insights-and-solutions/','authentic belonging inclusion neurodivergent'],
+   ['People care about each other here.','Building a more compassionate workplace',B+'ripple-effect-of-kindness-building-compassionate-workplace/','kindness care compassion'],
+   ['People celebrate special events around here.','Small rituals, real belonging',null,'celebrate events social rituals','Great fun in great workplaces',B+'great-fun-in-great-workplaces/']]},
+  {name:'Hospitality',desc:'How people are welcomed when they arrive or move teams.',rows:[
+   ['When you join the company, you are made to feel welcome.','Giving new teammates a warm welcome',B+'how-to-give-new-teammates-a-warm-welcome/','onboarding welcome new starters induction'],
+   ['When people change jobs or work units, they are made to feel right at home.','Onboarding that builds belonging',B+'first-impressions-meaningful-onboarding-to-foster-belonging-pride-from-the-outset/','onboarding internal mobility transfer belonging'],
+   ['This is a fun place to work.','The power of fun in the workplace',B+'the-power-of-fun-in-the-workplace/','fun social enjoyment']]},
+  {name:'Community',desc:'Cooperation across the organisation.',rows:[
+   ['You can count on people to cooperate.','When internal competition takes over',B+'blog-pvp-culture-in-the-workplace/','cooperation teamwork silos collaboration'],
+   ['People look forward to coming to work here.','The serious science of being happier at work',B+'workplace-happiness-learnable-skill/','happiness motivation engagement']]}
+ ]},
+{id:'overall',name:'Overall',full:'Overall experience',n:3,overall:true,
+ intro:'Three statements sit outside the five dimensions. They measure the overall experience, so they tend to follow the work you do elsewhere. Start with a dimension above, then watch these move.',
+ focus:[
+  {name:'Outcome statements',desc:'The overall experience, in your people’s words.',rows:[
+   ['Taking everything into account, I would say this is a great place to work.','What Certification™ validates',B+'value-of-certification/','overall great place certification'],
+   ['I would strongly endorse my company to friends and family as a great place to work.','How high-trust cultures show up on LinkedIn',B+'how-high-trust-cultures-show-up-on-linkedin/','endorse advocacy referral enps'],
+   ['I want to work here for a long time.','The cost of turnover in Australia',B+'cost-of-employee-turnover-australia/','retention turnover tenure stay']]},
+  {name:'Certification questions',module:true,desc:'Two extra questions, if you added them.',rows:[
+   ['Will you be looking for a new job this year?','Why Allianz people stay more than a decade',B+'blog-working-at-allianz-australia/','retention turnover leaving resign'],
+   ['Would knowing a workplace has been certified make you more likely to want to work there?','Using Certification™ in your employer brand',B+'how-to-use-great-place-to-work-certification-to-boost-your-employer-brand/','certification employer brand recruitment']]}
+ ]}
+];
+/* Australia's four lowest-scoring statements (2026 Insights, footnote 1). Matched to rows by statement text. */
+const OPPS=[
+ ['I feel I receive a fair share of the profits made by this organization.',62.7],
+ ['We have special and unique benefits here.',74.0],
+ ['People here are paid fairly for the work they do.',74.6],
+ ['Management involves people in decisions that affect their jobs or work environment.',75.5]
+];
+
+(function(){
+document.body.classList.remove('no-js');
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+const esc=s=>s.replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const KEY='gptw-ti-shortlist-v1';
+
+/* ---------- render ---------- */
+const ROWS=[];let alt=false;
+const dimsEl=$('#dims'),nav=$('#dimnav');
+DIMS.forEach((d,di)=>{
+  const sec=document.createElement('section');
+  sec.className='dim'+(alt?' soft':'');alt=!alt;sec.id=d.id;sec.setAttribute('aria-labelledby',d.id+'-h');
+  let stat='';
+  if(d.stat&&d.stat.bw){
+    stat=`<div class="stat"><p class="data" style="margin-bottom:16px;color:var(--gray-8)">${d.name} · % positive <a class="fnref" href="#fn${d.stat.fn}">${d.stat.fn}</a></p>
+      <div class="row2 us"><span>Best Workplaces™</span><span class="bar us" style="--w:${d.stat.bw}%"></span><b>${d.stat.bw.toFixed(1)}%</b></div>
+      <div class="row2"><span>Typical</span><span class="bar" style="--w:${d.stat.typ}%"></span><b>${d.stat.typ.toFixed(1)}%</b></div>
+      <p class="cap">${d.stat.cap}</p></div>`;
+  }else if(d.stat){
+    stat=`<div class="stat"><div class="big">${d.stat.big}<a class="fnref" href="#fn${d.stat.fn}">${d.stat.fn}</a></div><p class="cap" style="margin:0 0 16px">${d.stat.cap}</p>
+      ${d.stat.cmp.map(c=>`<div class="row2${c[2]?' us':''}"><span>${c[0]}</span><span class="bar${c[2]?' us':''}" style="--w:${c[1]}%"></span><b>${c[1]}%</b></div>`).join('')}</div>`;
+  }
+  const head=d.overall
+    ?`<div class="dhead"><div><span class="tag">Beyond the five dimensions</span><h2 class="h2" id="${d.id}-h" style="margin:20px 0">${d.full}.</h2><p class="intro">${d.intro}</p></div></div>`
+    :`<div class="dhead"><div><span class="tag">Dimension ${di+1} of 5 · ${d.n} statements</span>
+        <div class="dtitle" style="margin-top:20px"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true">${d.icon}</svg><h2 class="h2" id="${d.id}-h">${d.name}.</h2></div>
+        <p class="intro">${d.intro}</p></div>${stat}</div>`;
+  let body='<div class="focuses">';
+  d.focus.forEach((f,fi)=>{
+    const fid=`${d.id}-f${fi}`,open=fi===0;
+    body+=`<div class="focus" data-module="${f.module?1:0}">
+      <button class="fhead" type="button" aria-expanded="${open}" aria-controls="${fid}">
+        <h3>${f.name}${f.module?' <span class="mod">Optional</span>':''}<span class="desc">${f.desc}</span></h3>
+        <span class="n" data-n="${f.rows.length}">${f.rows.length} statement${f.rows.length>1?'s':''}</span><span class="pm" aria-hidden="true"></span></button>
+      <div class="fbody" id="${fid}"${open?'':' hidden'}>`;
+    f.rows.forEach((r,ri)=>{
+      const id=`${d.id}-${fi}-${ri}`;
+      const res=r[2]
+        ?`<div class="res"><a class="go" href="${r[2]}" target="_blank" rel="noopener"><span>${esc(r[1])}</span><i aria-hidden="true">→</i></a></div>`
+        :`<div class="res"><span class="soon">Coming soon</span><span class="ttl">${esc(r[1])}</span><span class="alt">Read now: <a href="${r[5]}" target="_blank" rel="noopener">${esc(r[4])}</a></span></div>`;
+      body+=`<div class="stmt" data-id="${id}"><input class="chk" type="checkbox" id="c-${id}" aria-describedby="r-${id}"><label for="c-${id}">${esc(r[0])}</label>${res.replace('<div class="res">',`<div class="res" id="r-${id}">`)}</div>`;
+      ROWS.push({id,dim:d,focus:f,stmt:r[0],title:r[1],url:r[2]||r[5],planned:!r[2],interim:r[4],module:!!f.module,
+        hay:norm([r[0],r[1],r[3],r[4]||'',f.name,f.desc,d.name].join(' '))});
+    });
+    body+='</div></div>';
+  });
+  body+='</div>';
+  const next=d.next?`<div class="next rv"><div><b>${d.next[0]}</b><p>${d.next[1]}</p></div><a class="link" href="${d.next[3]}"${d.next[3].startsWith('http')?' target="_blank" rel="noopener"':''}>${d.next[2]}</a></div>`:'';
+  sec.innerHTML=`<div class="wrap"><div class="rv">${head}</div>${body}${next}</div>`;
+  dimsEl.appendChild(sec);
+  nav.insertAdjacentHTML('beforeend',`<a href="#${d.id}" data-dim="${d.id}">${d.name}<span class="ct" aria-label="flagged"></span></a>`);
+});
+ROWS.forEach(r=>{r.el=$(`.stmt[data-id="${r.id}"]`);r.label=$('label',r.el);r.box=$('.chk',r.el)});
+const CORE=ROWS.filter(r=>!r.module).length; /* 60 */
+
+/* hero opportunities */
+const opps=$('#opps');
+OPPS.forEach(([s,v])=>{
+  const row=ROWS.find(r=>r.stmt===s);if(!row)return;
+  const b=document.createElement('button');b.type='button';b.className='opp';
+  b.innerHTML=`<span class="q">${esc(s)}</span><span class="meta"><span class="bar us" style="--w:${v}%"></span><b>${v.toFixed(1)}%</b></span>`;
+  b.addEventListener('click',()=>focusRow(row));
+  opps.appendChild(b);
+});
+
+/* ---------- accordions ---------- */
+function setOpen(btn,open){
+  btn.setAttribute('aria-expanded',open);
+  const p=document.getElementById(btn.getAttribute('aria-controls'));
+  p.hidden=!open; if(open){p.classList.remove('open');void p.offsetWidth;p.classList.add('open')}
+}
+$$('.fhead').forEach(b=>b.addEventListener('click',()=>setOpen(b,b.getAttribute('aria-expanded')!=='true')));
+const expBtn=$('#expandall');
+expBtn.addEventListener('click',()=>{
+  const open=expBtn.textContent==='Open all';
+  $$('.focus:not(.hide) .fhead').forEach(b=>setOpen(b,open));
+  expBtn.textContent=open?'Close all':'Open all';
+});
+
+/* ---------- search: UK and US spelling, synonyms, every word must match ---------- */
+function norm(s){
+  return s.toLowerCase().normalize('NFKD').replace(/[’']/g,'')
+    .replace(/favour/g,'favor').replace(/behaviour/g,'behavior').replace(/colour/g,'color')
+    .replace(/organis/g,'organiz').replace(/recognis/g,'recogniz').replace(/programme/g,'program')
+    .replace(/[^a-z0-9+ ]/g,' ').replace(/\s+/g,' ').trim();
+}
+const SYN={pay:'paid',salary:'paid',wage:'paid',money:'paid profits',bonus:'profits',promotion:'promotions',promoted:'promotions',
+  favoritism:'favorites',bias:'favorites fairly',onboarding:'join welcome',induction:'join welcome',leave:'time off',holiday:'time off',
+  wellbeing:'healthy balance',burnout:'healthy balance',stress:'healthy',safety:'safe',boss:'management',manager:'management managers',
+  leaders:'management executives',leadership:'management executives',thanks:'appreciation',inclusion:'fairly regardless',diversity:'fairly regardless',
+  dei:'fairly regardless',retention:'long time',turnover:'long time',belonging:'myself home welcome',teamwork:'cooperate',trust:'trust'};
+function terms(q){
+  return norm(q).split(' ').filter(Boolean).map(t=>{
+    const base=t.length>4?t.replace(/(ing|s)$/,''):t;
+    return [t,base,...(SYN[t]||SYN[base]||'').split(' ').filter(Boolean)].map(norm);
+  });
+}
+const q=$('#q'),status=$('#status'),empty=$('#empty'),sbox=$('#searchbox');
+function hl(text,groups){
+  if(!groups.length)return esc(text);
+  const words=[...new Set(groups.flat())].filter(w=>w.length>1).sort((a,b)=>b.length-a.length)
+    .map(w=>w.replace(/[.*+?^${}()|[\]\\]/g,'\\$&').replace(/or/g,'ou?r').replace(/iz/g,'[iz]').replace(/ /g,'\\s+'));
+  if(!words.length)return esc(text);
+  return esc(text).replace(new RegExp('('+words.join('|')+')','gi'),'<mark>$1</mark>');
+}
+function apply(){
+  const raw=q.value.trim(),groups=raw?terms(raw):[];let shown=0;
+  sbox.classList.toggle('has',!!raw);
+  ROWS.forEach(r=>{
+    const on=!groups.length||groups.every(g=>g.some(w=>r.hay.includes(w)));
+    r.el.classList.toggle('hide',!on);
+    if(on&&!r.module)shown++;
+    r.label.innerHTML=on&&groups.length?hl(r.stmt,groups):esc(r.stmt);
+  });
+  $$('.focus').forEach(f=>{
+    const vis=$$('.stmt',f).filter(s=>!s.classList.contains('hide')).length;
+    f.classList.toggle('hide',vis===0);
+    const n=$('.n',f),tot=+n.dataset.n;
+    n.innerHTML=groups.length?`<em>${vis}</em> of ${tot}`:`${tot} statement${tot>1?'s':''}`;
+    if(groups.length&&vis)setOpen($('.fhead',f),true);
+  });
+  $$('section.dim').forEach(sec=>{
+    const live=$$('.focus',sec).some(f=>!f.classList.contains('hide'));
+    sec.classList.toggle('hide',!live);
+    $(`.sub nav a[data-dim="${sec.id}"]`).classList.toggle('dim-hide',!live);
+  });
+  const total=ROWS.filter(r=>!r.el.classList.contains('hide')).length;
+  status.textContent=groups.length?`${total} match${total===1?'':'es'} for “${raw}”`:`${CORE} statements`;
+  empty.classList.toggle('show',groups.length>0&&total===0);
+  $$('.chip').forEach(c=>c.setAttribute('aria-pressed',norm(c.dataset.t)===norm(raw)));
+  spy();
+}
+let t;q.addEventListener('input',()=>{clearTimeout(t);t=setTimeout(apply,90)});
+function clearSearch(){q.value='';apply();}
+$('#clearq').addEventListener('click',()=>{clearSearch();q.focus()});
+$('#emptyclear').addEventListener('click',()=>{clearSearch();q.focus()});
+q.addEventListener('keydown',e=>{if(e.key==='Escape'){clearSearch()}
+  if(e.key==='Enter'){e.preventDefault();scrollToEl($('section.dim:not(.hide)'))}});
+addEventListener('keydown',e=>{if(e.key==='/'&&!/input|textarea/i.test(document.activeElement.tagName)){e.preventDefault();q.focus();q.select()}});
+$$('.chip').forEach(c=>c.addEventListener('click',()=>{
+  q.value=c.getAttribute('aria-pressed')==='true'?'':c.dataset.t;apply();
+  if(q.value)scrollToEl($('section.dim:not(.hide)'));
+}));
+function scrollToEl(el){if(el)el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'start'})}
+function focusRow(r){
+  if(q.value){clearSearch()}
+  const f=r.el.closest('.focus');setOpen($('.fhead',f),true);
+  r.el.scrollIntoView({behavior:reduce?'auto':'smooth',block:'center'});
+  setTimeout(()=>r.box.focus({preventScroll:true}),reduce?0:450);
+  r.el.animate&&!reduce&&r.el.animate([{background:'#dee5e4'},{background:''}],{duration:1200,easing:'ease-out'});
+}
+
+/* ---------- scroll spy + compact nav ---------- */
+const links=$$('.sub nav a'),top=$('#top');
+function spy(){
+  const y=(top.offsetHeight+56+40);let cur=null;
+  $$('section.dim:not(.hide)').forEach(s=>{if(s.getBoundingClientRect().top<=y)cur=s.id});
+  links.forEach(a=>a.classList.toggle('on',a.dataset.dim===cur));
+  const on=links.find(a=>a.classList.contains('on'));
+  if(on){const n=on.parentElement;const l=on.offsetLeft-n.scrollLeft;if(l<0||l+on.offsetWidth>n.clientWidth)n.scrollTo({left:on.offsetLeft-16,behavior:'auto'})}
+}
+let ticking=false;
+addEventListener('scroll',()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{
+  const c=scrollY>80;top.classList.toggle('compact',c);$('#sub').style.top=(c?56:72)+'px';
+  spy();ticking=false})},{passive:true});
+
+/* ---------- reveal + bars ---------- */
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in','grow');io.unobserve(e.target)}}),{threshold:.15});
+$$('.rv,.stat,.panel').forEach(el=>reduce?el.classList.add('in','grow'):io.observe(el));
+
+/* ---------- shortlist ---------- */
+const tray=$('#tray'),num=$('#num'),plist=$('#plist'),toggle=$('#toggle');
+let picked=new Set();
+try{(JSON.parse(localStorage.getItem(KEY))||[]).forEach(id=>{if(ROWS.some(r=>r.id===id))picked.add(id)})}catch(e){}
+function save(){try{localStorage.setItem(KEY,JSON.stringify([...picked]))}catch(e){}}
+function list(){return ROWS.filter(r=>picked.has(r.id))}
+function render(){
+  const items=list();
+  ROWS.forEach(r=>{const on=picked.has(r.id);r.box.checked=on;r.el.classList.toggle('on',on)});
+  num.textContent=items.length;
+  tray.classList.toggle('up',items.length>0);document.body.classList.toggle('tray-up',items.length>0);
+  if(!items.length){tray.classList.remove('expanded');toggle.textContent='View';toggle.setAttribute('aria-expanded','false')}
+  links.forEach(a=>{const n=items.filter(r=>r.dim.id===a.dataset.dim).length;const c=$('.ct',a);c.textContent=n;c.classList.toggle('show',n>0)});
+  plist.innerHTML='';
+  DIMS.forEach(d=>{
+    const its=items.filter(r=>r.dim===d);if(!its.length)return;
+    const g=document.createElement('div');g.className='pgrp';
+    g.innerHTML=`<h4>${d.full||d.name}</h4>`+its.map(r=>`<div class="pitem"><div><q>${esc(r.stmt)}</q>
+      <small>${r.planned?'Read now':'Read'}: <a href="${r.url}" target="_blank" rel="noopener">${esc(r.planned?r.interim:r.title)}</a></small></div>
+      <button class="rm" type="button" data-id="${r.id}" aria-label="Remove from shortlist">×</button></div>`).join('');
+    plist.appendChild(g);
+  });
+  save();
+}
+ROWS.forEach(r=>r.box.addEventListener('change',()=>{r.box.checked?picked.add(r.id):picked.delete(r.id);render()}));
+plist.addEventListener('click',e=>{const b=e.target.closest('.rm');if(!b)return;picked.delete(b.dataset.id);render();toggle.focus()});
+toggle.addEventListener('click',()=>{const x=tray.classList.toggle('expanded');toggle.textContent=x?'Hide':'View';toggle.setAttribute('aria-expanded',x)});
+$('#clearall').addEventListener('click',()=>{picked.clear();render();toast('Shortlist cleared')});
+
+function asText(){
+  let out='Trust Index™ shortlist\n\n';
+  DIMS.forEach(d=>{const its=list().filter(r=>r.dim===d);if(!its.length)return;
+    out+=(d.full||d.name).toUpperCase()+'\n';
+    its.forEach(r=>{out+=`• "${r.stmt}"\n  ${r.planned?r.interim:r.title}\n  ${r.url}\n`});out+='\n'});
+  return out.trim();
+}
+const toastEl=$('#toast');let tt;
+function toast(m){toastEl.textContent=m;toastEl.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>toastEl.classList.remove('show'),1800)}
+$('#copy').addEventListener('click',async()=>{
+  try{await navigator.clipboard.writeText(asText());toast('Copied to your clipboard')}
+  catch(e){toast('Copy is blocked here. Use Email instead.')}
+});
+function email(){
+  if(!picked.size){toast('Flag a statement first');scrollToEl($('#dims'));return}
+  location.href='mailto:?subject='+encodeURIComponent('Our Trust Index shortlist for the results debrief')+'&body='+encodeURIComponent(asText());
+}
+$('#email').addEventListener('click',email);$('#closer-email').addEventListener('click',email);
+
+$('#print').addEventListener('click',()=>{
+  const items=list(),d=new Date().toLocaleDateString('en-AU',{day:'numeric',month:'long',year:'numeric'});
+  $('#plan').innerHTML=`<h1>Trust Index™ action plan</h1><p class="sub2">${items.length} statement${items.length>1?'s':''} flagged · ${d}</p>
+   <table><thead><tr><th>Dimension</th><th>Statement and reading</th><th>Our action</th><th>Owner and date</th></tr></thead><tbody>
+   ${items.map(r=>`<tr><td class="d">${r.dim.full||r.dim.name}<br><span class="url">${r.focus.name}</span></td><td>“${esc(r.stmt)}”<br><span class="url">${esc(r.planned?r.interim:r.title)} · ${r.url}</span></td><td class="blank"></td><td class="blank"></td></tr>`).join('')}
+   </tbody></table><p class="fine">Great Place To Work® Australia · greatplacetowork.com.au</p>`;
+  print();
+});
+
+render();apply();
+})();
+</script>
+</body>
+</html>
