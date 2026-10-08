@@ -4,266 +4,354 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Best Workplaces 2026 insights report | Great Place To Work Australia</title>
-<meta name="description" content="What 128,405 Australian employees told us about pride, retention and trust at the 2026 Best Workplaces. Read the findings and download the report.">
+<meta name="description" content="What 128,405 Australian employees told us about pride, retention and trust at the 2026 Best Workplaces. Key findings, full data table and FAQs.">
+<link rel="canonical" href="https://greatplacetowork.com.au/reports/best-workplaces-insights/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Preview stand-ins named by the Great Place To Work Web System: Figtree for Gilroy, Newsreader italic for Frame Head, IBM Plex Mono for Ballinger Mono. On the live site the licensed faces load first. -->
+<!-- Preview stand-ins named by the Great Place To Work Web System: Figtree for Gilroy, Newsreader italic for Frame Head, IBM Plex Mono for Ballinger Mono. -->
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+
+<!-- Structured data: every figure here also appears as visible text on the page. Dates marked TBC in the footer. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://greatplacetowork.com.au/#org",
+      "name": "Great Place To Work Australia",
+      "url": "https://greatplacetowork.com.au/"
+    },
+    {
+      "@type": "Report",
+      "@id": "https://greatplacetowork.com.au/reports/best-workplaces-insights/#report",
+      "headline": "Best Workplaces in Australia 2026: special insights report",
+      "description": "Findings from the 2026 Trust Index survey of 128,405 Australian employees and an independent retention study of 140,251 responses from 682 organisations.",
+      "datePublished": "2026-08-27",
+      "inLanguage": "en-AU",
+      "author": {"@id": "https://greatplacetowork.com.au/#org"},
+      "publisher": {"@id": "https://greatplacetowork.com.au/#org"},
+      "about": ["Workplace culture", "Employee retention", "Employee pride", "Trust Index survey", "Best Workplaces in Australia"],
+      "isBasedOn": {"@id": "https://greatplacetowork.com.au/reports/best-workplaces-insights/#data"}
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://greatplacetowork.com.au/reports/best-workplaces-insights/#data",
+      "name": "Best Workplaces in Australia 2026: Trust Index findings",
+      "description": "Percentage of employees responding positively to Trust Index statements at Australia's Best Workplaces 2026 compared with typical Australian workplaces, plus retention study results.",
+      "creator": {"@id": "https://greatplacetowork.com.au/#org"},
+      "spatialCoverage": "Australia",
+      "temporalCoverage": "2025/2026",
+      "measurementTechnique": "Trust Index employee survey, 60 statements, percentage positive",
+      "variableMeasured": ["Trust Index score", "I'm proud to tell others I work here", "Management's actions match its words", "I want to work here for a long time", "I would strongly endorse my company to friends and family"]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {"@type": "Question", "name": "What exactly did you measure?", "acceptedAnswer": {"@type": "Answer", "text": "We sent the same 60-statement survey to 128,405 employees across Australia. It measures trust across five themes: camaraderie, credibility, fairness, pride and respect. The Trust Index score is the average positive response across all 60 statements."}},
+        {"@type": "Question", "name": "What do you mean by pride?", "acceptedAnswer": {"@type": "Answer", "text": "Pride is measured by three statements: I'm proud to tell others I work here, I feel pride in what I accomplish here, and My work has special meaning. Of what the five themes explain about retention, pride accounts for 25.8%."}},
+        {"@type": "Question", "name": "Why should I trust Great Place To Work data?", "acceptedAnswer": {"@type": "Answer", "text": "The Trust Index methodology has measured workplace culture for 30 years in more than 150 countries. For the retention findings, an independent research partner ran the analysis on 140,251 Australian responses from 682 organisations."}},
+        {"@type": "Question", "name": "Will Certification or a Best Workplaces place help us hire?", "acceptedAnswer": {"@type": "Answer", "text": "It gives candidates proof of your culture that your employees provided. Australian job seekers say they are 15 times more likely to apply to a Great Place To Work Certified company."}}
+      ]
+    }
+  ]
+}
+</script>
+
 <style>
-/* ===== Tokens: Great Place To Work Web System ===== */
 :root{
-  --brand-red:#ff1628;--brand-red-dark:#a3001a;--brand-black:#11131c;
-  --gray-1:#f5f8f6;--gray-2:#edf1ef;--gray-3:#dee5e4;--gray-4:#c4cccc;--gray-5:#a6aeb2;--gray-6:#879298;
-  --gray-7:#69737a;--gray-8:#555e66;--gray-9:#444c54;--gray-10:#32383f;--gray-11:#22262d;
-  --text:var(--brand-black);--muted:var(--gray-8);--border:var(--gray-3);--focus:#2b6cff;
+  --red:#ff1628;--red-d:#a3001a;--ink:#11131c;
+  --g1:#f5f8f6;--g2:#edf1ef;--g3:#dee5e4;--g4:#c4cccc;--g5:#a6aeb2;--g6:#879298;--g7:#69737a;--g8:#555e66;--g10:#32383f;
+  --muted:var(--g8);--border:var(--g3);--focus:#2b6cff;
   --font:"Gilroy","Figtree","Century Gothic",system-ui,sans-serif;
   --accent:"Frame Head","Newsreader",Georgia,serif;
   --mono:"Ballinger Mono","IBM Plex Mono",ui-monospace,monospace;
-  --gutter:32px;--ease:cubic-bezier(.2,.7,.2,1);
+  --gutter:32px;--ease:cubic-bezier(.2,.7,.2,1);--nav:72px;
 }
-*,*::before,*::after{box-sizing:border-box}
-*{margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:136px}
-body{font:400 16px/1.45 var(--font);color:var(--text);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-ul,ol{list-style:none}
-a{color:inherit}
+*,*::before,*::after{box-sizing:border-box}*{margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:140px}
+body{font:400 16px/1.45 var(--font);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+ul,ol{list-style:none}a{color:inherit}button{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .wrap{max-width:1180px;margin:0 auto;padding:0 var(--gutter)}
-.sec{padding:96px 0}
-.soft{background:var(--gray-1)}
-.center{text-align:center}
+.sec{padding:96px 0}.soft{background:var(--g1)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 /* type */
 .tag{display:inline-block;font:500 13px/16px var(--font);border:1px solid currentColor;border-radius:999px;padding:7px 14px;margin-bottom:20px}
 .h1{font:400 72px/72px var(--font);letter-spacing:-.035em}
 .h2{font:400 52px/56px var(--font);letter-spacing:-.025em;margin-bottom:20px}
-.h2 .r{color:var(--brand-red)}
+.h2 .r{color:var(--red)}
 .h3{font:600 28px/33px var(--font);letter-spacing:-.02em}
-.h5{font:600 20px/26px var(--font);letter-spacing:-.01em}
 .intro{font:400 18px/27px var(--font);color:var(--muted);max-width:640px}
-.center .intro{margin:0 auto}
+.center{text-align:center}.center .intro{margin:0 auto}
 .head{margin-bottom:48px}
 .lead{font:500 22px/30px var(--font);letter-spacing:-.01em;max-width:540px}
 .acc{font-family:var(--accent);font-style:italic;font-weight:400;letter-spacing:-.01em}
-.data{font:400 13px/18px var(--mono);letter-spacing:.02em;color:var(--gray-7)}
-.fn{font:500 11px/0 var(--mono);vertical-align:super;text-decoration:none;color:inherit;opacity:.75;margin-left:2px}
-.link{font:600 16px/22px var(--font);color:var(--brand-black);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--brand-red)}
-.link:hover{color:var(--brand-red)}
-.tbc{font:500 11px/1 var(--mono);background:var(--gray-3);color:var(--brand-black);padding:3px 6px;margin-left:6px;vertical-align:2px;white-space:nowrap}
+.data{font:400 13px/18px var(--mono);color:var(--g7)}
+.fn{font:500 11px/0 var(--mono);vertical-align:super;text-decoration:none;opacity:.75;margin-left:2px}
+.link{font:600 16px/22px var(--font);text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px;text-decoration-color:var(--red)}
+.link:hover{color:var(--red)}
+.tbc{font:500 11px/1 var(--mono);background:var(--g3);color:var(--ink);padding:3px 6px;margin-left:6px;vertical-align:2px;white-space:nowrap}
 p+p{margin-top:12px}
 
-/* buttons */
-.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 32px;border:1px solid var(--brand-red);border-radius:0;background:var(--brand-red);color:#fff;font:600 14px/16px var(--font);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms}
-.btn:hover{background:var(--brand-black);border-color:var(--brand-black)}
-.btn--white{background:#fff;color:var(--brand-black);border-color:#fff}
-.btn--white:hover{background:var(--brand-black);color:#fff;border-color:var(--brand-black)}
-.btn--ghost-w{background:transparent;color:#fff;border-color:#fff}
-.btn--ghost-w:hover{background:#fff;color:var(--brand-black)}
-.btn--outline{background:transparent;color:var(--brand-black);border-color:var(--brand-black)}
-.btn--outline:hover{background:var(--brand-black);color:#fff}
-.btn--sm{height:40px;padding:0 22px;font-size:13px}
+/* buttons + controls */
+.btn{white-space:nowrap;display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 32px;border:1px solid var(--red);border-radius:0;background:var(--red);color:#fff;font:600 14px/16px var(--font);letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:background 120ms,color 120ms,border-color 120ms}
+.btn:hover{background:var(--ink);border-color:var(--ink)}
+.btn--white{background:#fff;color:var(--ink);border-color:#fff}.btn--white:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+.btn--ghost-w{background:transparent;color:#fff;border-color:#fff}.btn--ghost-w:hover{background:#fff;color:var(--ink)}
+.btn--outline{background:transparent;color:var(--ink);border-color:var(--ink)}.btn--outline:hover{background:var(--ink);color:#fff}
+.btn--sm{height:40px;padding:0 20px;font-size:13px}
 .btns{display:flex;gap:16px;flex-wrap:wrap}
+.seg{display:inline-flex;border:1px solid var(--g3);background:#fff;padding:4px}
+.seg button{border:0;background:none;padding:10px 16px;font:600 14px/1 var(--font);color:var(--g8);cursor:pointer;min-height:40px;transition:background 200ms,color 200ms}
+.seg button[aria-pressed="true"]{background:var(--ink);color:#fff}
+.textbtn{background:none;border:0;cursor:pointer;font:600 14px/20px var(--font);text-decoration:underline;text-underline-offset:4px;text-decoration-color:var(--red);min-height:44px;padding:0}
+.textbtn:hover{color:var(--red)}
 
 /* announce + nav */
-.announce{background:var(--brand-red);color:#fff;text-align:center;font:600 16px/22px var(--font);padding:10px 16px}
+.announce{background:var(--red);color:#fff;text-align:center;font:600 16px/22px var(--font);padding:10px 16px}
 .announce a{color:#fff;text-underline-offset:3px}
-.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--border);height:72px;transition:height 200ms var(--ease)}
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--border);height:var(--nav);transition:height 200ms var(--ease)}
 .top .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .top img.lg{width:46px;height:46px;display:block;transition:width 200ms,height 200ms}
 .top nav{display:flex;gap:26px;align-items:center;font:500 15px/20px var(--font)}
 .top nav a:not(.btn){text-decoration:none;padding:12px 0}
-.top nav a:not(.btn):hover,.top nav a[aria-current]{color:var(--brand-red)}
+.top nav a:not(.btn):hover,.top nav a[aria-current]{color:var(--red)}
 .top.compact{height:56px}.top.compact img.lg{width:38px;height:38px}
 
-/* hero red */
-.hero{background:var(--brand-red);color:#fff;position:relative;overflow:hidden}
+/* hero */
+.hero{background:var(--red);color:#fff;position:relative;overflow:hidden}
 .hero::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(104deg,rgba(255,255,255,.075) 0 1px,transparent 1px 11px);-webkit-mask:radial-gradient(120% 90% at 85% 0%,#000 20%,transparent 70%);mask:radial-gradient(120% 90% at 85% 0%,#000 20%,transparent 70%);pointer-events:none}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;padding-top:88px;padding-bottom:96px}
-.hero .tag{color:var(--brand-black);border-color:var(--brand-black)}
+.hero .tag{color:var(--ink);border-color:var(--ink)}
 .hero .h1{margin-bottom:24px}
-.hero .h1 .acc{color:var(--brand-black);font-size:1.06em}
-.hero .lead{margin-bottom:32px;color:#fff}
-.scorecard{background:#fff;color:var(--brand-black);border-radius:6px;padding:32px}
-.scorecard .h5{margin-bottom:4px}
+.hero .h1 .acc{color:var(--ink);font-size:1.06em}
+.hero .lead{margin-bottom:24px;color:#fff}
+.hero .meta{font:500 14px/20px var(--font);color:var(--ink);margin-bottom:32px}
+.scorecard{background:#fff;color:var(--ink);border-radius:6px;padding:32px}
+.scorecard h2{font:600 20px/26px var(--font);margin-bottom:4px}
 .scorecard>p{color:var(--muted);margin-bottom:24px;font-size:15px}
 .ti{display:grid;gap:18px}
 .ti .row{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:end}
-.ti .row span{font:500 15px/20px var(--font)}
-.ti .row b{font:500 40px/40px var(--font);letter-spacing:-.025em}
-.ti .row.us b{color:var(--brand-red)}
+.ti dt{font:500 15px/20px var(--font)}
+.ti dd{font:500 40px/40px var(--font);letter-spacing:-.025em}
+.ti .us dd{color:var(--red)}
 .ti .bar{grid-column:1/-1}
 
-/* bars (DataBars) */
-.bar{display:block;height:10px;background:var(--gray-2);position:relative;overflow:hidden}
-.bar::after{content:"";position:absolute;inset:0 auto 0 0;width:0;background:var(--gray-6);transition:width 800ms var(--ease)}
-.bar.us::after{background:linear-gradient(90deg,var(--brand-red-dark),var(--brand-red));transition-delay:120ms}
-.grow .bar::after{width:var(--w)}
+/* bars (decorative; every value is printed as text beside it) */
+.bar{display:block;height:10px;background:var(--g2);position:relative;overflow:hidden}
+.bar::after{content:"";position:absolute;inset:0 auto 0 0;width:0;background:var(--g6);transition:width 800ms var(--ease)}
+.bar.us::after{background:linear-gradient(90deg,var(--red-d),var(--red));transition-delay:120ms}
+.grow .bar::after,.no-js .bar::after{width:var(--w)}
 
-/* sticky report contents (product sub nav) */
-.sub{position:sticky;top:72px;z-index:30;background:#fff;border-bottom:1px solid var(--border);transition:top 200ms var(--ease)}
+/* sub nav */
+.sub{position:sticky;top:var(--nav);z-index:30;background:#fff;border-bottom:1px solid var(--border);transition:top 200ms var(--ease)}
 .sub .wrap{display:flex;align-items:stretch;gap:16px;height:56px}
 .sub nav{display:flex;overflow-x:auto;scrollbar-width:none;flex:1}
 .sub nav::-webkit-scrollbar{display:none}
-.sub nav a{display:flex;align-items:center;padding:0 16px;font:600 14px/1 var(--font);color:var(--gray-8);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap;transition:color 120ms,border-color 200ms}
+.sub nav a{display:flex;align-items:center;padding:0 14px;font:600 14px/1 var(--font);color:var(--g8);text-decoration:none;border-bottom:3px solid transparent;white-space:nowrap;transition:color 120ms,border-color 200ms}
 .sub nav a:first-child{padding-left:0}
-.sub nav a:hover{color:var(--brand-black)}
-.sub nav a.on{color:var(--brand-black);border-bottom-color:var(--brand-red)}
+.sub nav a:hover{color:var(--ink)}
+.sub nav a.on{color:var(--ink);border-bottom-color:var(--red)}
 .sub .dl{align-self:center}
 
-/* stats strip */
-.stats{background:var(--gray-1);border-bottom:1px solid var(--gray-4)}
-.stats .wrap{display:grid;grid-template-columns:1.1fr repeat(4,1fr);gap:24px;align-items:center;padding-top:32px;padding-bottom:32px}
-.stats .who{font:400 13px/18px var(--mono);color:var(--muted);max-width:230px}
-.stats .who b{color:var(--brand-red);font-weight:500}
-.stats .n{display:block;font:400 44px/48px var(--font);letter-spacing:-.025em;color:var(--brand-red)}
-.stats .l{font:400 14px/20px var(--font);color:var(--muted);display:block;max-width:200px}
+/* key findings */
+.findings{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;counter-reset:f}
+.finding{background:#fff;border:1px solid var(--border);border-radius:6px;padding:28px;display:flex;flex-direction:column;gap:12px;counter-increment:f;position:relative;transition:border-color 200ms}
+.finding:target,.finding:hover{border-color:var(--ink)}
+.finding .num{font:500 13px/1 var(--mono);color:var(--red)}
+.finding .num::before{content:"Finding " counter(f,decimal-leading-zero)}
+.finding .big{font:400 56px/56px var(--font);letter-spacing:-.03em;color:var(--red)}
+.finding p{font:400 16px/23px var(--font)}
+.finding .src{font:400 13px/18px var(--font);color:var(--muted);margin-top:auto}
+.finding .textbtn{align-self:flex-start;min-height:32px;font-size:13px}
 
-/* split band */
+/* measured */
 .band{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.band.top-al{align-items:start}
-.themes{font:400 24px/32px var(--font);letter-spacing:-.01em;margin:24px 0}
-.themes span{color:var(--brand-red)}
+.themes{font:400 24px/32px var(--font);letter-spacing:-.01em;margin:24px 0;color:var(--ink)}
+.themes b{font-weight:400;color:var(--red)}
 .card{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px}
 .soft .card{border-color:transparent}
-.card .k{font:600 14px/16px var(--font);color:var(--brand-red);margin-bottom:12px;display:block}
-.card p{color:var(--muted)}
+.card .k{font:600 14px/16px var(--font);color:var(--red);margin-bottom:12px;display:block}
 .card .h3{margin-bottom:12px}
-.method{display:grid;gap:12px;margin-top:20px}
-.method li{display:grid;grid-template-columns:28px 1fr;gap:12px;font-size:16px}
-.method li::before{content:"";width:12px;height:12px;background:var(--brand-red);margin-top:6px}
+.ticks{display:grid;gap:12px;margin-top:20px}
+.ticks li{display:grid;grid-template-columns:28px 1fr;gap:12px}
+.ticks li::before{content:"";width:12px;height:12px;background:var(--red);margin-top:6px}
 
-/* comparison block */
-.cmp{display:grid;gap:14px}
-.cmp .q{font:600 20px/26px var(--font);letter-spacing:-.01em;margin-bottom:6px}
-.cmp .q::before{content:"\201C"}.cmp .q::after{content:"\201D"}
-.cmp .r{display:grid;grid-template-columns:150px 1fr 64px;gap:12px;align-items:center;font:400 13px/16px var(--mono);color:var(--gray-8)}
-.cmp .r.us{color:var(--brand-black)}
-.cmp .r b{font:500 15px/1 var(--mono);text-align:right}
-.callout{display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-top:32px;padding-top:24px;border-top:1px solid var(--border)}
-.callout b{font:500 72px/72px var(--font);letter-spacing:-.03em;color:var(--brand-red)}
-.callout p{font:500 18px/25px var(--font);max-width:34ch}
+/* pride sticky story */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.pin{position:sticky;top:180px;background:#fff;border-radius:6px;padding:40px}
+.pin .q{font:600 20px/26px var(--font);margin-bottom:8px;min-height:52px}
+.pin .big{font:400 112px/104px var(--font);letter-spacing:-.04em;color:var(--red);transition:opacity 200ms}
+.pin .lbl{font:500 18px/25px var(--font);margin:8px 0 24px;min-height:50px}
+.pin .rows{display:grid;gap:10px}
+.pin .r{display:grid;grid-template-columns:140px 1fr 60px;gap:12px;align-items:center;font:400 13px/16px var(--mono);color:var(--g8)}
+.pin .r.us{color:var(--ink)}.pin .r b{font-weight:500;text-align:right}
+.pin .r[hidden]{display:none}
+.pin .dots{display:flex;gap:8px;margin-top:28px}
+.pin .dots i{width:28px;height:3px;background:var(--g3);transition:background 200ms}
+.pin .dots i.on{background:var(--red)}
+.steps{display:grid;gap:0}
+.step{min-height:60vh;display:flex;flex-direction:column;justify-content:center;padding:32px 0;border-top:1px solid var(--g3)}
+.step:first-child{border-top:0;padding-top:0;min-height:50vh;justify-content:flex-start}
+.step .k{font:500 13px/1 var(--mono);color:var(--red);margin-bottom:12px}
+.step h3{font:400 36px/40px var(--font);letter-spacing:-.02em;margin-bottom:12px}
+.step p{font:400 18px/27px var(--font);color:var(--muted)}
+.step .inline{display:block;font:500 15px/21px var(--font);color:var(--ink);margin-top:12px}
+.js .story .step .inline{display:none}
 
-/* proof cards */
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.cards.two{grid-template-columns:repeat(2,1fr)}
-.pcard{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px;display:flex;flex-direction:column;gap:16px;transition:border-color 200ms}
-.pcard:hover{border-color:var(--brand-black)}
-.soft .pcard{border-color:transparent}.soft .pcard:hover{border-color:var(--brand-black)}
-.pcard .big{font:400 64px/64px var(--font);letter-spacing:-.03em;color:var(--brand-red)}
-.pcard .big small{font-size:.45em;vertical-align:super;line-height:0}
-.pcard .what{font:600 18px/24px var(--font)}
-.pcard .vs{font:400 15px/21px var(--font);color:var(--muted)}
-.pcard .cmp{margin-top:auto;padding-top:16px;border-top:1px solid var(--border)}
-.pcard .cmp .r{grid-template-columns:128px 1fr 52px}
+/* comparison chart */
+.chart{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px}
+.soft .chart{border-color:transparent}
+.chart-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:24px}
+.chart-head h3{font:600 20px/26px var(--font)}
+.chart-head p{color:var(--muted);font-size:15px}
+.tools{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.legend{display:flex;gap:20px;font:400 13px/16px var(--mono);color:var(--g8);margin-bottom:16px}
+.legend span::before{content:"";display:inline-block;width:14px;height:10px;margin-right:8px;vertical-align:-1px;background:var(--g6)}
+.legend .us::before{background:var(--red)}
+.cmp{display:grid}
+.cmp li{display:grid;grid-template-columns:minmax(220px,1.1fr) 2fr 150px;gap:8px 24px;align-items:center;padding:16px 0;border-top:1px solid var(--g2)}
+.cmp li:first-child{border-top:0}
+.cmp .s{font:500 15px/21px var(--font)}
+.cmp .bars{display:grid;gap:6px}
+.cmp .vals{display:grid;gap:2px;font:400 13px/16px var(--mono);color:var(--g8);text-align:right}
+.cmp .vals b{color:var(--ink);font-weight:500}
+.cmp .gap{display:none;font:500 13px/1 var(--mono);color:#fff;background:var(--ink);padding:5px 8px;justify-self:end;margin-top:4px}
+.show-gap .cmp .gap{display:inline-block}
+.chart figcaption{margin-top:16px;color:var(--muted);font-size:14px}
 
 /* quote */
 .quote{display:grid;grid-template-columns:420px 1fr;gap:64px;align-items:center}
-.quote figure{border-radius:6px;overflow:hidden;background:var(--gray-3);aspect-ratio:768/600}
+.quote figure{border-radius:6px;overflow:hidden;background:var(--g3);aspect-ratio:768/600}
 .quote figure img{width:100%;height:100%;object-fit:cover;display:block;filter:grayscale(1)}
 .quote blockquote{font:400 34px/42px var(--accent);font-style:italic;letter-spacing:-.01em;text-indent:-.4em}
-.quote cite{display:block;font:400 16px/22px var(--font);font-style:normal;margin-top:28px;color:var(--muted)}
-.quote cite b{display:block;color:var(--brand-black);font-weight:600}
+.quote figcaption{font:400 16px/22px var(--font);margin-top:28px;color:var(--muted)}
+.quote figcaption b{display:block;color:var(--ink);font-weight:600}
 
-/* gen z */
-.vs-big{display:grid;grid-template-columns:1fr auto 1fr;gap:24px;align-items:end;max-width:760px;margin:40px auto 0}
-.vs-big div{text-align:center}
-.vs-big b{display:block;font:400 88px/88px var(--font);letter-spacing:-.04em}
-.vs-big .us b{color:var(--brand-red)}
-.vs-big span{font:400 14px/20px var(--font);color:var(--muted);display:block;margin-top:8px}
-.vs-big i{font:400 13px/1 var(--mono);color:var(--gray-7);font-style:normal;padding-bottom:40px}
-.sub-head{margin:80px 0 32px;padding-top:48px;border-top:1px solid var(--border)}
-.sub-head .h3{margin-bottom:12px}
-.sub-head p{color:var(--muted);max-width:68ch}
+/* dumbbell */
+.groups{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+.dumb{background:#fff;border-radius:6px;padding:32px}
+.dumb h3{font:600 20px/26px var(--font);margin-bottom:6px}
+.dumb>p{color:var(--muted);font-size:15px;margin-bottom:20px}
+.dumb .legend{margin-bottom:8px}
+.db li{padding:14px 0;border-top:1px solid var(--g2)}
+.db li:first-of-type{border-top:0}
+.db .s{font:500 15px/21px var(--font);margin-bottom:10px}
+.db .track{position:relative;height:24px}
+.db .track::before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:var(--g2)}
+.db .line{position:absolute;top:10px;height:4px;background:var(--g4)}
+.db .dot{position:absolute;top:4px;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--g6);border:2px solid #fff}
+.db .dot.us{background:var(--red)}
+.db .vals{display:flex;justify-content:space-between;font:400 13px/16px var(--mono);color:var(--g8);margin-top:6px;gap:12px}
+.db .vals b{color:var(--ink);font-weight:500}
+.genz-note{margin-top:24px;color:var(--muted);max-width:760px}
 
 /* red band */
-.redband{background:var(--brand-red);color:#fff;position:relative;overflow:hidden}
+.redband{background:var(--red);color:#fff;position:relative;overflow:hidden}
 .redband::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(104deg,rgba(255,255,255,.07) 0 1px,transparent 1px 11px);-webkit-mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);pointer-events:none}
 .redband .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
-.redband .tag{color:var(--brand-black);border-color:var(--brand-black)}
-.redband .h2{margin-bottom:24px}
+.redband .tag{color:var(--ink);border-color:var(--ink)}
 .redband p.big{font:500 22px/30px var(--font);max-width:30ch}
-.keep{background:#fff;color:var(--brand-black);border-radius:6px;padding:32px}
-.keep .row{display:flex;align-items:baseline;justify-content:space-between;gap:16px;padding:16px 0;border-top:1px solid var(--border)}
-.keep .row:first-of-type{border-top:0;padding-top:0}
-.keep .row b{font:400 64px/64px var(--font);letter-spacing:-.03em}
-.keep .row.us b{color:var(--brand-red)}
-.keep .row span{font:500 15px/20px var(--font);color:var(--muted);text-align:right}
-.keep .bar{margin-top:-4px;margin-bottom:8px}
+.keep{background:#fff;color:var(--ink);border-radius:6px;padding:32px}
+.keep dl{display:grid;gap:8px}
+.keep .row{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.keep dd{font:400 64px/64px var(--font);letter-spacing:-.03em}
+.keep .us dd{color:var(--red)}
+.keep dt{font:500 15px/20px var(--font);color:var(--muted);text-align:right;order:2}
+.keep .bar{margin-bottom:16px}
 
-/* scorecard top/bottom */
+/* scorecard lists */
 .lists{display:grid;grid-template-columns:1fr 1fr;gap:24px}
 .list{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px}
-.soft .list{border-color:transparent}
 .list h3{font:600 20px/26px var(--font);margin-bottom:8px}
 .list>p{color:var(--muted);font-size:15px;margin-bottom:16px}
 .list ol{counter-reset:n}
 .list li{counter-increment:n;display:grid;grid-template-columns:36px 1fr 60px;gap:6px 12px;align-items:center;padding:14px 0;border-top:1px solid var(--border)}
-.list li::before{content:counter(n,decimal-leading-zero);font:500 13px/1 var(--mono);color:var(--brand-red);grid-row:1/3}
+.list li::before{content:counter(n,decimal-leading-zero);font:500 13px/1 var(--mono);color:var(--red);grid-row:1/3}
 .list li span{font:400 15px/21px var(--font);grid-column:2/4}
 .list li .bar{grid-column:2}
 .list li b{font:500 14px/1 var(--mono);text-align:right}
-.list.low li::before{color:var(--gray-8)}
+.list.low li::before{color:var(--g8)}
 
 /* next steps */
-.who-card h3{font:400 32px/36px var(--font);letter-spacing:-.02em;margin-bottom:12px}
-.who-card .lede{font:500 18px/25px var(--font);color:var(--brand-black)}
-.steps{display:grid;gap:14px;margin:8px 0}
-.steps li{display:grid;grid-template-columns:32px 1fr;gap:12px;color:var(--muted)}
-.steps li b{color:var(--brand-black);font-weight:600}
-.steps li::before{counter-increment:s;content:counter(s);font:500 14px/1 var(--mono);color:#fff;background:var(--brand-black);width:24px;height:24px;display:grid;place-items:center;margin-top:1px}
-.steps{counter-reset:s}
+.cards2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.who{background:#fff;border:1px solid var(--border);border-radius:6px;padding:32px;display:flex;flex-direction:column;gap:16px}
+.who h3{font:400 32px/36px var(--font);letter-spacing:-.02em}
+.who .lede{font:500 18px/25px var(--font)}
+.nsteps{display:grid;gap:14px;counter-reset:s}
+.nsteps li{display:grid;grid-template-columns:32px 1fr;gap:12px;color:var(--muted)}
+.nsteps li b{color:var(--ink);font-weight:600}
+.nsteps li::before{counter-increment:s;content:counter(s);font:500 14px/1 var(--mono);color:#fff;background:var(--ink);width:24px;height:24px;display:grid;place-items:center;margin-top:1px}
+.who .link{margin-top:auto}
 
-/* method table */
-.mt{width:100%;border-collapse:collapse;text-align:left}
-.mt th{font:400 12px/16px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--gray-8);padding:0 24px 12px 0;border-bottom:2px solid var(--brand-black)}
-.mt td{padding:20px 24px 20px 0;border-bottom:1px solid var(--border);vertical-align:top;color:var(--muted)}
-.mt td:first-child{font:600 18px/24px var(--font);color:var(--brand-black);width:26%}
-.mt td:last-child{font:500 15px/21px var(--font);color:var(--brand-black);width:28%}
+/* data table + cite */
+.mt{width:100%;border-collapse:collapse;text-align:left;margin-bottom:24px}
+.mt caption{text-align:left;font:600 20px/26px var(--font);margin-bottom:16px}
+.mt th{font:400 12px/16px var(--mono);letter-spacing:.04em;text-transform:uppercase;color:var(--g8);padding:0 16px 12px 0;border-bottom:2px solid var(--ink);vertical-align:bottom}
+.mt td{padding:14px 16px 14px 0;border-bottom:1px solid var(--border);vertical-align:top;font-size:15px}
+.mt td.n{font:500 14px/20px var(--mono);white-space:nowrap}
+.mt td.src{color:var(--muted);font-size:13px}
+.mt tbody th{font:500 15px/21px var(--font);text-transform:none;letter-spacing:0;color:var(--ink);border-bottom:1px solid var(--border);padding:14px 16px 14px 0;vertical-align:top}
+.tablewrap{overflow-x:auto}
+.datasets td:first-child{font-weight:600;width:26%}
+.cite{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:16px 24px;align-items:center;background:#fff;border:1px solid var(--border);border-radius:6px;padding:24px 28px;margin-top:32px}
+.cite p{font:400 14px/21px var(--mono);color:var(--g8);overflow-wrap:anywhere}
+.cite .btns{gap:12px}
 
 /* faq */
 .faq{max-width:820px;margin:0 auto;border-top:1px solid var(--border)}
 .faq details{border-bottom:1px solid var(--border)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;padding:24px 0;font:600 20px/26px var(--font);letter-spacing:-.01em}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:24px;padding:24px 0;font:600 20px/26px var(--font)}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary::after{content:"+";font:500 28px/24px var(--font);color:var(--brand-red)}
+.faq summary::after{content:"+";font:500 28px/24px var(--font);color:var(--red)}
 .faq details[open] summary::after{content:"\2212"}
-.faq summary:hover{color:var(--brand-red)}
+.faq summary:hover{color:var(--red)}
 .faq .a{padding:0 48px 24px 0;color:var(--muted);max-width:680px}
 
-/* closer */
-.closer{background:var(--brand-red);color:#fff;padding:120px 0;position:relative;overflow:hidden}
+/* closer + footer */
+.closer{background:var(--red);color:#fff;padding:120px 0;position:relative;overflow:hidden}
 .closer::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(104deg,rgba(255,255,255,.07) 0 1px,transparent 1px 11px);-webkit-mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);mask:radial-gradient(90% 120% at 50% 0%,#000 30%,transparent 80%);pointer-events:none}
 .closer .wrap{position:relative;display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:end}
-.closer .tag{color:var(--brand-black);border-color:var(--brand-black)}
+.closer .tag{color:var(--ink);border-color:var(--ink)}
 .closer h2{font:400 84px/84px var(--font);letter-spacing:-.035em}
-.closer h2 .acc{color:var(--brand-black);font-size:1.08em}
+.closer h2 .acc{color:var(--ink);font-size:1.08em}
 .closer p{font:500 20px/28px var(--font);max-width:520px;margin-top:20px}
 .closer .btns{flex-direction:column;align-items:stretch;max-width:340px;justify-self:end;width:100%}
-
-/* footer */
-.foot{background:var(--brand-black);color:var(--gray-4);padding:64px 0 40px;font:400 14px/20px var(--font)}
+.foot{background:var(--ink);color:var(--g4);padding:64px 0 40px;font:400 14px/20px var(--font)}
 .foot .cols{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:32px;margin-bottom:48px}
 .foot b{display:block;color:#fff;font-weight:600;margin-bottom:12px}
 .foot a{display:block;margin-bottom:8px;text-decoration:none}
 .foot a:hover{color:#fff;text-decoration:underline}
-.foot .notes{border-top:1px solid var(--gray-10);padding-top:24px;display:grid;gap:8px;max-width:920px}
-.foot .notes p{color:var(--gray-5);margin:0}
+.foot .notes{border-top:1px solid var(--g10);padding-top:24px;display:grid;grid-template-columns:minmax(0,1fr);gap:8px;max-width:920px}
+.foot .notes p{overflow-wrap:anywhere}
+.foot .notes p{color:var(--g5);margin:0}
 .foot .notes sup{color:#fff;margin-right:4px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,16px);opacity:0;z-index:60;background:#fff;color:var(--ink);border:1px solid var(--ink);padding:12px 18px;font:600 14px/1 var(--font);transition:opacity 200ms,transform 200ms var(--ease);pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
 
 /* motion */
 .rv{opacity:0;transform:translateY(16px);transition:opacity 400ms var(--ease),transform 400ms var(--ease)}
-.rv.in{opacity:1;transform:none}
-.no-js .rv{opacity:1;transform:none}
-.no-js .bar::after{width:var(--w)}
+.rv.in,.no-js .rv{opacity:1;transform:none}
+
+/* print: everything visible, no chrome */
+@media print{
+  .announce,.top,.sub,.tools,.textbtn,.cite .btns,.closer .btns,.toast{display:none!important}
+  .pin{position:static}.step{min-height:0}.js .story .step .inline{display:block}
+  .rv{opacity:1;transform:none}.bar::after{width:var(--w)!important}
+  .sec{padding:32px 0}
+}
 
 @media (max-width:1080px){
   .top nav a:not(.btn){display:none}
-  .hero .wrap,.band,.quote,.redband .wrap,.closer .wrap,.lists{grid-template-columns:1fr}
-  .cards{grid-template-columns:1fr 1fr}
-  .stats .wrap{grid-template-columns:1fr 1fr}
-  .stats .who{grid-column:1/-1}
+  .hero .wrap,.band,.quote,.redband .wrap,.closer .wrap,.lists,.groups,.story{grid-template-columns:1fr}
+  .findings{grid-template-columns:1fr 1fr}
   .closer .btns{justify-self:start}
   .quote figure{max-width:420px}
+  .pin{display:none}
+  .js .story .step .inline{display:block}
+  .step,.step:first-child{min-height:0;padding:28px 0}
 }
 @media (max-width:900px){
   :root{--gutter:16px}
@@ -272,16 +360,15 @@ p+p{margin-top:12px}
   .closer h2{font-size:48px;line-height:50px}
   .hero .wrap{padding-top:48px;padding-bottom:64px;gap:40px}
   .head{margin-bottom:32px}
-  .cards,.cards.two{grid-template-columns:1fr}
-  .vs-big b{font-size:56px;line-height:56px}.vs-big i{padding-bottom:24px}
+  .findings,.cards2{grid-template-columns:1fr}
+  .cmp li{grid-template-columns:1fr auto;gap:8px 16px}
+  .cmp .bars{grid-column:1/-1;grid-row:2}
   .quote blockquote{font-size:24px;line-height:31px}
-  .callout b{font-size:56px;line-height:56px}
   .sub .dl{display:none}
   .foot .cols{grid-template-columns:1fr 1fr}
-  .mt thead{display:none}.mt,.mt tbody,.mt tr,.mt td{display:block;width:auto!important}
-  .mt tr{padding:16px 0;border-bottom:1px solid var(--border)}.mt td{border:0;padding:4px 0}
-  .cmp .r{grid-template-columns:112px 1fr 52px}
-  .scorecard,.keep,.list,.pcard,.card{padding:24px}
+  .cite{grid-template-columns:minmax(0,1fr)}
+  .scorecard,.keep,.list,.who,.card,.chart,.dumb,.finding{padding:24px}
+  .step h3{font-size:28px;line-height:32px}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -303,63 +390,105 @@ p+p{margin-top:12px}
 </div></header>
 
 <main>
-<!-- ============ HeroRed ============ -->
+<article>
+<!-- ============ Hero ============ -->
 <section class="hero" aria-labelledby="h1"><div class="wrap">
   <div>
     <span class="tag rv">2026 Insights report</span>
     <h1 class="h1 rv" id="h1">What sets the Best Workplaces™ <span class="acc">apart.</span></h1>
     <p class="lead rv">We sent the same survey to 128,405 employees across Australia. Their answers decided this year's list, and showed how the culture work behind it pays off.</p>
+    <p class="meta rv">Great Place To Work® Australia · Published <time datetime="2026-08-27">27 August 2026</time><span class="tbc">TBC</span></p>
     <div class="btns rv">
       <a class="btn btn--white" href="#">Download the report</a>
-      <a class="btn btn--ghost-w" href="#scorecard">See the scorecard</a>
+      <a class="btn btn--ghost-w" href="#findings">See the key findings</a>
     </div>
   </div>
   <aside class="scorecard rv" aria-labelledby="ti-h">
-    <h2 class="h5" id="ti-h">The Trust Index™ score in full.</h2>
+    <h2 id="ti-h">The Trust Index™ score in full.</h2>
     <p>Average positive response across all 60 statements, 2026.<a class="fn" href="#fn1">1</a></p>
-    <div class="ti">
-      <div class="row us"><span>Best Workplaces™ in Australia</span><b data-count="93">93%</b><span class="bar us" style="--w:93%"></span></div>
-      <div class="row"><span>Great Place To Work® Certified™</span><b data-count="84.9">84.9%</b><span class="bar" style="--w:84.9%"></span></div>
-      <div class="row"><span>Typical Australian workplace</span><b data-count="57.8">57.8%</b><span class="bar" style="--w:57.8%"></span></div>
-    </div>
+    <dl class="ti">
+      <div class="row us"><dt>Best Workplaces™ in Australia</dt><dd>93%</dd><span class="bar us" style="--w:93%" aria-hidden="true"></span></div>
+      <div class="row"><dt>Great Place To Work® Certified™</dt><dd>84.9%</dd><span class="bar" style="--w:84.9%" aria-hidden="true"></span></div>
+      <div class="row"><dt>Typical Australian workplace</dt><dd>57.8%</dd><span class="bar" style="--w:57.8%" aria-hidden="true"></span></div>
+    </dl>
   </aside>
 </div></section>
 
 <!-- report contents -->
 <div class="sub" id="sub"><div class="wrap">
   <nav aria-label="Report contents">
-    <a href="#measured">How culture is measured</a>
+    <a href="#findings">Key findings</a>
+    <a href="#measured">Measurement</a>
     <a href="#pride">Pride and retention</a>
+    <a href="#compare">Best vs typical</a>
     <a href="#genz">Gen Z</a>
     <a href="#scorecard">Scorecard</a>
     <a href="#next">What to do next</a>
-    <a href="#built">How it was built</a>
+    <a href="#data">Data and method</a>
   </nav>
   <a class="btn btn--sm btn--outline dl" href="#">Download PDF</a>
 </div></div>
 
-<!-- ============ StatsStrip ============ -->
-<section class="stats" aria-label="The report in numbers"><div class="wrap">
-  <p class="who">The 2026 report in numbers, from the <b>Trust Index™</b> survey and an independent retention study.<a class="fn" href="#fn1">1</a></p>
-  <div><b class="n">128,405</b><span class="l">Australian employees surveyed for the 2026 list</span></div>
-  <div><b class="n">25.8%</b><span class="l">of what culture explains about retention comes from pride<a class="fn" href="#fn2">2</a></span></div>
-  <div><b class="n">96.2%</b><span class="l">at Best Workplaces™ are proud to tell others they work there</span></div>
-  <div><b class="n">92.5%</b><span class="l">at Best Workplaces™ say management’s actions match its words</span></div>
+<!-- ============ Key findings ============ -->
+<section class="sec soft" id="findings" aria-labelledby="f-h"><div class="wrap">
+  <div class="head rv">
+    <span class="tag">Key findings</span>
+    <h2 class="h2" id="f-h">Six findings from the 2026 <span class="r">Best Workplaces™.</span></h2>
+    <p class="intro">Each finding below stands on its own, with its source. Link to or quote any of them directly.</p>
+  </div>
+  <ol class="findings">
+    <li class="finding rv" id="finding-pride-retention">
+      <span class="num"></span><span class="big">25.8%</span>
+      <p>Pride is the strongest culture signal for retention in Australia. Of everything the five Trust Index™ themes explain about whether employees intend to stay, pride accounts for 25.8%, the largest share.</p>
+      <span class="src">Independent retention study, 140,251 responses from 682 Australian organisations, 2025 to 2026.</span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+    <li class="finding rv" id="finding-proud">
+      <span class="num"></span><span class="big">96.2%</span>
+      <p>96.2% of employees at Australia’s Best Workplaces™ 2026 are proud to tell others they work there, against 60.0% at typical Australian workplaces.</p>
+      <span class="src">2026 Trust Index™ survey, 128,405 Australian employees.</span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+    <li class="finding rv" id="finding-keep-word">
+      <span class="num"></span><span class="big">92.5%</span>
+      <p>92.5% of employees at Australia’s Best Workplaces™ say management’s actions match its words, against 49.6% at typical Australian workplaces. The statement ranked in the top three of 60 for its link to a great culture at every company size and age group.</p>
+      <span class="src">2026 Trust Index™ survey.</span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+    <li class="finding rv" id="finding-trust-index">
+      <span class="num"></span><span class="big">93%</span>
+      <p>Australia’s Best Workplaces™ 2026 average a Trust Index™ score of 93%, against 84.9% for Great Place To Work® Certified™ organisations and 57.8% for typical Australian organisations.</p>
+      <span class="src">2026 Trust Index™ survey, average positive response across 60 statements.</span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+    <li class="finding rv" id="finding-genz-stay">
+      <span class="num"></span><span class="big">86.1%</span>
+      <p>86.1% of employees aged 25 and under at Australia’s Best Workplaces™ want to work there for a long time, against 91.7% across all Best Workplaces™ employees.</p>
+      <span class="src">2026 Trust Index™ survey.<a class="fn" href="#fn3">3</a></span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+    <li class="finding rv" id="finding-profit-share">
+      <span class="num"></span><span class="big">59.9%</span>
+      <p>The lowest-scoring statement at Australia’s Best Workplaces™ 2026 is “I feel I receive a fair share of the profits made by this organization”, at 59.9% positive.</p>
+      <span class="src">2026 Trust Index™ survey.</span>
+      <button class="textbtn" type="button" data-copy>Copy finding</button>
+    </li>
+  </ol>
 </div></section>
 
-<!-- ============ How culture is measured (SplitBand) ============ -->
+<!-- ============ How culture is measured ============ -->
 <section class="sec" id="measured" aria-labelledby="m-h"><div class="wrap band">
   <div class="rv">
     <span class="tag">How culture is measured</span>
     <h2 class="h2" id="m-h">Best Workplaces™ lead where it <span class="r">matters most.</span></h2>
     <p class="intro">Great Place To Work® measures culture across five themes.</p>
-    <p class="themes"><span>Camaraderie</span>, credibility, respect, fairness and <span>pride</span>.</p>
+    <p class="themes"><b>Camaraderie</b>, credibility, respect, fairness and <b>pride</b>.</p>
     <p class="intro">An independent study tested all five against whether employees intend to stay long term, using two years of Australian Trust Index™ data. Of everything the five themes explain about retention, pride accounts for 25.8%, the largest share by far.<a class="fn" href="#fn2">2</a></p>
   </div>
   <div class="card rv">
-    <span class="k">The Trust Index™ survey</span>
+    <span class="k">What is the Trust Index™ survey?</span>
     <h3 class="h3">The instrument behind every figure on this page.</h3>
-    <ul class="method">
+    <ul class="ticks">
       <li>Employees respond to 60 statements about their day-to-day experience at work.</li>
       <li>Your people answer directly to us, and leaders see grouped results.</li>
       <li>The Trust Index™ score is the average positive response across all 60.</li>
@@ -368,142 +497,127 @@ p+p{margin-top:12px}
   </div>
 </div></section>
 
-<!-- ============ Pride (SplitBand + DataBars) ============ -->
+<!-- ============ Pride: sticky story ============ -->
 <section class="sec soft" id="pride" aria-labelledby="p-h"><div class="wrap">
-  <div class="band top-al">
-    <div class="rv">
-      <span class="tag">The #1 measure of retention</span>
-      <h2 class="h2" id="p-h">The top predictor of loyalty is <span class="r">pride.</span></h2>
-      <p class="intro">Within pride, one statement best measures what your people say about you when you are out of the room: “I’m proud to tell others I work here.”</p>
+  <div class="head rv">
+    <span class="tag">The #1 measure of retention</span>
+    <h2 class="h2" id="p-h">The top predictor of loyalty is <span class="r">pride.</span></h2>
+    <p class="intro">Within pride, one statement best measures what your people say about you when you are out of the room: “I’m proud to tell others I work here.”</p>
+  </div>
+  <div class="story">
+    <div class="pin" aria-hidden="true">
+      <p class="q" id="pin-q"></p>
+      <div class="big" id="pin-big"></div>
+      <p class="lbl" id="pin-lbl"></p>
+      <div class="rows">
+        <div class="r us"><span>Best Workplaces™</span><span class="bar us" id="pin-b1"></span><b id="pin-v1"></b></div>
+        <div class="r" id="pin-r2"><span>Typical workplace</span><span class="bar" id="pin-b2"></span><b id="pin-v2"></b></div>
+      </div>
+      <div class="dots"><i></i><i></i><i></i><i></i></div>
     </div>
-    <div class="card cmp-card rv">
-      <div class="cmp">
-        <p class="q">I’m proud to tell others I work here.</p>
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:96.2%"></span><b>96.2%</b></div>
-        <div class="r"><span>Typical workplace</span><span class="bar" style="--w:60%"></span><b>60.0%</b></div>
-      </div>
-      <div class="callout"><b>38%</b><p>of employees who strongly disagree say they are very unlikely to stay.<a class="fn" href="#fn2">2</a></p></div>
+    <div class="steps">
+      <section class="step" data-q="“I’m proud to tell others I work here.”" data-big="96.2%" data-lbl="of employees at Best Workplaces™ agree." data-a="96.2" data-b="60.0">
+        <span class="k">01 · Pride</span>
+        <h3>Nearly everyone on the list is proud to say where they work.</h3>
+        <p>At Australia’s Best Workplaces™, 96.2% of employees are proud to tell others they work there. At typical Australian workplaces, 60.0% say the same.</p>
+        <span class="inline">Best Workplaces™ 96.2% · Typical 60.0%</span>
+      </section>
+      <section class="step" data-q="Among employees who strongly disagree" data-big="38%" data-lbl="say they are very unlikely to stay." data-a="" data-b="">
+        <span class="k">02 · Retention risk</span>
+        <h3>Pride and staying move together.</h3>
+        <p>Among employees who strongly disagree that they are proud to tell others they work there, 38% say they are very unlikely to stay.<a class="fn" href="#fn2">2</a></p>
+        <span class="inline">38% very unlikely to stay</span>
+      </section>
+      <section class="step" data-q="“I want to work here for a long time.”" data-big="91.7%" data-lbl="of employees at Best Workplaces™ agree." data-a="91.7" data-b="56.3">
+        <span class="k">03 · The payoff</span>
+        <h3>Pride pays off where it counts for hiring.</h3>
+        <p>91.7% of employees at Best Workplaces™ say they want to work there for a long time, against 56.3% at typical Australian workplaces.</p>
+        <span class="inline">Best Workplaces™ 91.7% · Typical 56.3%</span>
+      </section>
+      <section class="step" data-q="“I would strongly endorse my company to friends and family.”" data-big="93.9%" data-lbl="of employees at Best Workplaces™ agree." data-a="93.9" data-b="54.1">
+        <span class="k">04 · Advocacy</span>
+        <h3>Proud people tell their friends.</h3>
+        <p>93.9% of employees at Best Workplaces™ would strongly endorse their employer to friends and family, against 54.1% at typical Australian workplaces.</p>
+        <span class="inline">Best Workplaces™ 93.9% · Typical 54.1%</span>
+      </section>
     </div>
   </div>
+</div></section>
 
-  <div class="sub-head rv" style="border-color:var(--gray-3)">
-    <span class="tag">The payoff</span>
-    <h3 class="h3">Pride pays off where it counts for hiring.</h3>
-    <p>People who are proud of where they work stay longer, and they tell their friends.</p>
-  </div>
-  <div class="cards two">
-    <article class="pcard rv">
-      <div class="big">91.7<small>%</small></div>
-      <p class="what">want to work at their Best Workplace™ for a long time.</p>
-      <div class="cmp">
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:91.7%"></span><b>91.7%</b></div>
-        <div class="r"><span>Typical</span><span class="bar" style="--w:56.3%"></span><b>56.3%</b></div>
-      </div>
-    </article>
-    <article class="pcard rv">
-      <div class="big">93.9<small>%</small></div>
-      <p class="what">would strongly endorse their employer to friends and family.</p>
-      <div class="cmp">
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:93.9%"></span><b>93.9%</b></div>
-        <div class="r"><span>Typical</span><span class="bar" style="--w:54.1%"></span><b>54.1%</b></div>
-      </div>
-    </article>
-  </div>
-
-  <div class="sub-head rv" style="border-color:var(--gray-3)">
+<!-- ============ Best vs typical (sortable, gap toggle) ============ -->
+<section class="sec" id="compare" aria-labelledby="c-h"><div class="wrap">
+  <div class="head rv">
     <span class="tag">Beyond the pay cheque</span>
-    <h3 class="h3">More than just a job.</h3>
-    <p>Pride shows up in what people think their work adds up to.</p>
+    <h2 class="h2" id="c-h">More than just a job.</h2>
+    <p class="intro">Pride shows up in what people think their work adds up to. Here is how Australia’s Best Workplaces™ compare with typical Australian workplaces on every statement in this report.</p>
   </div>
-  <div class="cards">
-    <article class="pcard rv">
-      <div class="big">94.6<small>%</small></div>
-      <p class="what">feel a sense of pride in what they accomplish.</p>
-      <div class="cmp">
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:94.6%"></span><b>94.6%</b></div>
-        <div class="r"><span>Typical</span><span class="bar" style="--w:69.2%"></span><b>69.2%</b></div>
+  <figure class="chart rv" id="cmp-chart">
+    <div class="chart-head">
+      <div><h3>Best Workplaces™ against typical Australian workplaces.</h3><p>% of employees responding positively, 2026.<a class="fn" href="#fn1">1</a></p></div>
+      <div class="tools" role="group" aria-label="Chart controls">
+        <div class="seg" role="group" aria-label="Sort by">
+          <button type="button" data-sort="best" aria-pressed="true">Sort by score</button>
+          <button type="button" data-sort="gap" aria-pressed="false">Sort by gap</button>
+        </div>
+        <button class="btn btn--sm btn--outline" type="button" id="gapbtn" aria-pressed="false">Show the gap</button>
       </div>
-    </article>
-    <article class="pcard rv">
-      <div class="big">92.7<small>%</small></div>
-      <p class="what">feel they make a difference.</p>
-      <div class="cmp">
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:92.7%"></span><b>92.7%</b></div>
-        <div class="r"><span>Typical</span><span class="bar" style="--w:64.6%"></span><b>64.6%</b></div>
-      </div>
-    </article>
-    <article class="pcard rv">
-      <div class="big">88.7<small>%</small></div>
-      <p class="what">say their work has special meaning.<a class="fn" href="#fn3">3</a></p>
-      <div class="cmp">
-        <div class="r us"><span>Best Workplaces™</span><span class="bar us" style="--w:88.7%"></span><b>88.7%</b></div>
-        <div class="r"><span>Typical</span><span class="bar" style="--w:53.1%"></span><b>53.1%</b></div>
-      </div>
-    </article>
-  </div>
+    </div>
+    <div class="legend" aria-hidden="true"><span class="us">Best Workplaces™</span><span>Typical Australian workplace</span></div>
+    <ol class="cmp" id="cmp">
+      <li data-a="96.2" data-b="60.0"><span class="s">“I’m proud to tell others I work here.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:96.2%"></span><span class="bar" style="--w:60%"></span></span><span class="vals"><b>96.2%</b><span>60.0%</span><span class="gap">+36.2 pts</span></span></li>
+      <li data-a="94.6" data-b="69.2"><span class="s">“I feel pride in what I accomplish here.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:94.6%"></span><span class="bar" style="--w:69.2%"></span></span><span class="vals"><b>94.6%</b><span>69.2%</span><span class="gap">+25.4 pts</span></span></li>
+      <li data-a="93.9" data-b="54.1"><span class="s">“I would strongly endorse my company to friends and family.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:93.9%"></span><span class="bar" style="--w:54.1%"></span></span><span class="vals"><b>93.9%</b><span>54.1%</span><span class="gap">+39.8 pts</span></span></li>
+      <li data-a="93" data-b="57.8"><span class="s">Trust Index™ score, all 60 statements</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:93%"></span><span class="bar" style="--w:57.8%"></span></span><span class="vals"><b>93%</b><span>57.8%</span><span class="gap">+35.2 pts</span></span></li>
+      <li data-a="92.7" data-b="64.6"><span class="s">“I feel I make a difference here.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:92.7%"></span><span class="bar" style="--w:64.6%"></span></span><span class="vals"><b>92.7%</b><span>64.6%</span><span class="gap">+28.1 pts</span></span></li>
+      <li data-a="92.5" data-b="49.6"><span class="s">“Management’s actions match its words.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:92.5%"></span><span class="bar" style="--w:49.6%"></span></span><span class="vals"><b>92.5%</b><span>49.6%</span><span class="gap">+42.9 pts</span></span></li>
+      <li data-a="91.7" data-b="56.3"><span class="s">“I want to work here for a long time.”</span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:91.7%"></span><span class="bar" style="--w:56.3%"></span></span><span class="vals"><b>91.7%</b><span>56.3%</span><span class="gap">+35.4 pts</span></span></li>
+      <li data-a="88.7" data-b="53.1"><span class="s">“My work has special meaning.”<a class="fn" href="#fn3">3</a></span><span class="bars" aria-hidden="true"><span class="bar us" style="--w:88.7%"></span><span class="bar" style="--w:53.1%"></span></span><span class="vals"><b>88.7%</b><span>53.1%</span><span class="gap">+35.6 pts</span></span></li>
+    </ol>
+    <figcaption>The widest gap is on “Management’s actions match its words”: 42.9 points between the Best Workplaces™ and typical Australian workplaces.</figcaption>
+  </figure>
 </div></section>
 
-<!-- ============ QuoteBlock ============ -->
-<section class="sec" aria-label="Leadership view"><div class="wrap quote">
+<!-- ============ Quote ============ -->
+<section class="sec soft" aria-label="Leadership view"><div class="wrap quote">
   <figure class="rv"><img src="data:image/webp;base64,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" alt="Rebecca Moulynox, General Manager, Great Place To Work® Australia and New Zealand"></figure>
-  <div class="rv">
+  <figure class="rv">
     <blockquote>“What sets the best workplaces apart is a genuine focus on culture, coming from the top. Those leaders build culture deliberately. They make a concerted effort to create the space they want to see.”</blockquote>
-    <cite><b>Rebecca Moulynox</b>General Manager, Great Place To Work® Australia and New Zealand</cite>
-  </div>
+    <figcaption><b>Rebecca Moulynox</b>General Manager, Great Place To Work® Australia and New Zealand</figcaption>
+  </figure>
 </div></section>
 
-<!-- ============ Gen Z ============ -->
-<section class="sec soft" id="genz" aria-labelledby="g-h"><div class="wrap">
-  <div class="head center rv">
+<!-- ============ Gen Z: two honest comparisons ============ -->
+<section class="sec" id="genz" aria-labelledby="g-h"><div class="wrap">
+  <div class="head rv">
     <span class="tag">Culture and Gen Z</span>
     <h2 class="h2" id="g-h">Your youngest people can be your <span class="r">loudest advocates.</span></h2>
-    <p class="intro">Employees aged 25 and under are the most likely to say they’re proud of where they work. They are also the most likely to be thinking about what comes next.</p>
+    <p class="intro">Employees aged 25 and under are the most likely to say they’re proud of where they work. They are also the most likely to be thinking about what comes next. Ask them what makes their workplace good and they talk about people: the team is the subject they name most in their written comments, ahead of pay, managers and perks put together.</p>
   </div>
-  <div class="vs-big rv" aria-label="Want to work here for a long time, at Best Workplaces">
-    <div class="us"><b>86.1%</b><span>of under-25s at Best Workplaces™ want to stay a long time</span></div>
-    <i>vs</i>
-    <div><b>56.3%</b><span>of all employees at typical Australian workplaces<a class="fn" href="#fn3">3</a></span></div>
-  </div>
-  <p class="intro" style="margin:24px auto 0;text-align:center">Across all Best Workplaces™ employees the figure is 91.7%, so the stay gap for under-25s is the one to watch.</p>
-
-  <div class="sub-head rv">
-    <h3 class="h3">Their team is the story.</h3>
-    <p>Ask under-25s what makes their workplace good and they talk about people. In their written comments, the team is the subject they name most, ahead of pay, managers and perks put together. 97.3% of under-25s at Best Workplaces™ say they were made to feel welcome, against 69.2% at typical Australian workplaces.</p>
-  </div>
-  <div class="cards">
-    <article class="pcard rv">
-      <p class="what">“I’m treated as a full member here regardless of my position.”</p>
-      <div class="cmp">
-        <div class="r us"><span>Under-25s, Best</span><span class="bar us" style="--w:95%"></span><b>95.0%</b></div>
-        <div class="r"><span>Under-25s, typical</span><span class="bar" style="--w:64.2%"></span><b>64.2%</b></div>
-      </div>
-    </article>
-    <article class="pcard rv">
-      <p class="what">“My work has special meaning.”</p>
-      <div class="cmp">
-        <div class="r us"><span>Under-25s, Best</span><span class="bar us" style="--w:83.3%"></span><b>83.3%</b></div>
-        <div class="r"><span>Other ages, Best</span><span class="bar" style="--w:86.1%"></span><b>86.1%</b></div>
-      </div>
-      <p class="vs">Lower for under-25s.<a class="fn" href="#fn3">3</a></p>
-    </article>
-    <article class="pcard rv">
-      <p class="what">“I feel I make a difference here.”</p>
-      <div class="cmp">
-        <div class="r us"><span>Under-25s, Best</span><span class="bar us" style="--w:88%"></span><b>88.0%</b></div>
-        <div class="r"><span>Other ages, Best</span><span class="bar" style="--w:92.7%"></span><b>92.7%</b></div>
-      </div>
-      <p class="vs">Their comments name the fix: better training, clearer career paths and being taken seriously early.</p>
-    </article>
-  </div>
-
-  <div class="sub-head rv">
-    <h3 class="h3">They want to see a fair system.</h3>
-    <p>Young employees at the Best Workplaces™ want to know how decisions get made, and they rate their employers far higher on it.</p>
-  </div>
-  <div class="cards">
-    <article class="pcard rv"><div class="big">89.3<small>%</small></div><p class="what">say promotions go to those who best deserve them.</p><p class="vs">45.0% at typical Australian workplaces.</p></article>
-    <article class="pcard rv"><div class="big">87.1<small>%</small></div><p class="what">say managers avoid playing favourites.</p><p class="vs">43.4% at typical Australian workplaces.</p></article>
-    <article class="pcard rv"><div class="big">87.3<small>%</small></div><p class="what">say management involves people in decisions that affect their jobs.</p><p class="vs">45.2% at typical Australian workplaces.</p></article>
+  <div class="groups">
+    <figure class="dumb soft rv">
+      <h3>Within the Best Workplaces™.</h3>
+      <p>Under-25s compared with other employees at the same organisations.</p>
+      <div class="legend" aria-hidden="true"><span class="us">Under-25s</span><span>Comparison group</span></div>
+      <ul class="db">
+        <li data-a="86.1" data-b="91.7"><p class="s">“I want to work here for a long time.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Under-25s <b>86.1%</b></span><span>All Best Workplaces™ employees <b>91.7%</b></span></p></li>
+        <li data-a="88.0" data-b="92.7"><p class="s">“I feel I make a difference here.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Under-25s <b>88.0%</b></span><span>Other ages <b>92.7%</b></span></p></li>
+        <li data-a="83.3" data-b="86.1"><p class="s">“My work has special meaning.”<a class="fn" href="#fn3">3</a></p><div class="track" aria-hidden="true"></div><p class="vals"><span>Under-25s <b>83.3%</b></span><span>Other ages <b>86.1%</b></span></p></li>
+      </ul>
+      <figcaption class="genz-note">Their written comments name the fix: better training, clearer career paths, and being taken seriously early.</figcaption>
+    </figure>
+    <figure class="dumb soft rv">
+      <h3>Against typical workplaces.</h3>
+      <p>Under-25s at Best Workplaces™ compared with under-25s at typical Australian workplaces.</p>
+      <div class="legend" aria-hidden="true"><span class="us">Under-25s, Best Workplaces™</span><span>Under-25s, typical</span></div>
+      <ul class="db">
+        <li data-a="97.3" data-b="69.2"><p class="s">“When you join the company, you are made to feel welcome.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Typical <b>69.2%</b></span><span>Best <b>97.3%</b></span></p></li>
+        <li data-a="95.0" data-b="64.2"><p class="s">“I’m treated as a full member here regardless of my position.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Typical <b>64.2%</b></span><span>Best <b>95.0%</b></span></p></li>
+        <li data-a="89.3" data-b="45.0"><p class="s">“Promotions go to those who best deserve them.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Typical <b>45.0%</b></span><span>Best <b>89.3%</b></span></p></li>
+        <li data-a="87.3" data-b="45.2"><p class="s">“Management involves people in decisions that affect their jobs.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Typical <b>45.2%</b></span><span>Best <b>87.3%</b></span></p></li>
+        <li data-a="87.1" data-b="43.4"><p class="s">“Managers avoid playing favourites.”</p><div class="track" aria-hidden="true"></div><p class="vals"><span>Typical <b>43.4%</b></span><span>Best <b>87.1%</b></span></p></li>
+      </ul>
+      <figcaption class="genz-note">Young employees at the Best Workplaces™ want to know how decisions get made, and they rate their employers far higher on it.<a class="fn" href="#fn4">4</a></figcaption>
+    </figure>
   </div>
 </div></section>
 
@@ -515,16 +629,18 @@ p+p{margin-top:12px}
     <p class="big">“Management’s actions match its words” placed in the top three of 60 statements for its link to a great culture, from micro companies to large.</p>
   </div>
   <div class="keep rv">
-    <div class="row us"><b>92.5%</b><span>Best Workplaces™</span></div>
-    <span class="bar us" style="--w:92.5%"></span>
-    <div class="row"><b>49.6%</b><span>Typical Australian workplaces</span></div>
-    <span class="bar" style="--w:49.6%"></span>
-    <p class="data" style="margin-top:12px">More than nine in ten people on this list say their employer keeps its word.</p>
+    <dl>
+      <div class="row us"><dd>92.5%</dd><dt>Best Workplaces™</dt></div>
+      <span class="bar us" style="--w:92.5%" aria-hidden="true"></span>
+      <div class="row"><dd>49.6%</dd><dt>Typical Australian workplaces</dt></div>
+      <span class="bar" style="--w:49.6%" aria-hidden="true"></span>
+    </dl>
+    <p class="data">More than nine in ten people on this list say their employer keeps its word.</p>
   </div>
 </div></section>
 
 <!-- ============ Scorecard ============ -->
-<section class="sec" id="scorecard" aria-labelledby="s-h"><div class="wrap">
+<section class="sec soft" id="scorecard" aria-labelledby="s-h"><div class="wrap">
   <div class="head center rv">
     <span class="tag">Scorecard</span>
     <h2 class="h2" id="s-h">Where trust is strongest, and where it can grow.</h2>
@@ -534,50 +650,50 @@ p+p{margin-top:12px}
     <div class="list rv">
       <h3>Top 5 statements.</h3><p>% positive at Best Workplaces™</p>
       <ol>
-        <li><span>People here are treated fairly regardless of their sexual orientation.</span><span class="bar us" style="--w:96%"></span><b>96.0%</b></li>
-        <li><span>This is a physically safe place to work.</span><span class="bar us" style="--w:95.5%"></span><b>95.5%</b></li>
-        <li><span>People here are treated fairly regardless of their race.</span><span class="bar us" style="--w:95.3%"></span><b>95.3%</b></li>
-        <li><span>People here are treated fairly regardless of their gender.</span><span class="bar us" style="--w:94.2%"></span><b>94.2%</b></li>
-        <li><span>When you join the company, you are made to feel welcome.</span><span class="bar us" style="--w:93.9%"></span><b>93.9%</b></li>
+        <li><span>People here are treated fairly regardless of their sexual orientation.</span><span class="bar us" style="--w:96%" aria-hidden="true"></span><b>96.0%</b></li>
+        <li><span>This is a physically safe place to work.</span><span class="bar us" style="--w:95.5%" aria-hidden="true"></span><b>95.5%</b></li>
+        <li><span>People here are treated fairly regardless of their race.</span><span class="bar us" style="--w:95.3%" aria-hidden="true"></span><b>95.3%</b></li>
+        <li><span>People here are treated fairly regardless of their gender.</span><span class="bar us" style="--w:94.2%" aria-hidden="true"></span><b>94.2%</b></li>
+        <li><span>When you join the company, you are made to feel welcome.</span><span class="bar us" style="--w:93.9%" aria-hidden="true"></span><b>93.9%</b></li>
       </ol>
     </div>
     <div class="list low rv">
       <h3>Room to grow.</h3><p>The five lowest, % positive at Best Workplaces™</p>
       <ol>
-        <li><span>I feel I receive a fair share of the profits made by this organization.</span><span class="bar" style="--w:59.9%"></span><b>59.9%</b></li>
-        <li><span>People here are paid fairly for the work they do.</span><span class="bar" style="--w:70.3%"></span><b>70.3%</b></li>
-        <li><span>My work has special meaning: this is not “just a job.”<a class="fn" href="#fn3">3</a></span><span class="bar" style="--w:75.2%"></span><b>75.2%</b></li>
-        <li><span>We have special and unique benefits here.</span><span class="bar" style="--w:77.1%"></span><b>77.1%</b></li>
-        <li><span>Management involves people in decisions that affect their jobs or work environment.</span><span class="bar" style="--w:77.9%"></span><b>77.9%</b></li>
+        <li><span>I feel I receive a fair share of the profits made by this organization.</span><span class="bar" style="--w:59.9%" aria-hidden="true"></span><b>59.9%</b></li>
+        <li><span>People here are paid fairly for the work they do.</span><span class="bar" style="--w:70.3%" aria-hidden="true"></span><b>70.3%</b></li>
+        <li><span>My work has special meaning: this is not “just a job.”<a class="fn" href="#fn3">3</a></span><span class="bar" style="--w:75.2%" aria-hidden="true"></span><b>75.2%</b></li>
+        <li><span>We have special and unique benefits here.</span><span class="bar" style="--w:77.1%" aria-hidden="true"></span><b>77.1%</b></li>
+        <li><span>Management involves people in decisions that affect their jobs or work environment.</span><span class="bar" style="--w:77.9%" aria-hidden="true"></span><b>77.9%</b></li>
       </ol>
     </div>
   </div>
 </div></section>
 
-<!-- ============ What to do next (PillarCards) ============ -->
-<section class="sec soft" id="next" aria-labelledby="n-h"><div class="wrap">
+<!-- ============ What to do next ============ -->
+<section class="sec" id="next" aria-labelledby="n-h"><div class="wrap">
   <div class="head rv">
     <span class="tag">What to do next</span>
     <h2 class="h2" id="n-h">Put these results to work.</h2>
     <p class="intro">Insights matter when they change what you do. Here is where each leader can start.</p>
   </div>
-  <div class="cards two">
-    <article class="pcard who-card rv">
+  <div class="cards2">
+    <article class="who rv">
       <span class="tag" style="align-self:flex-start;margin:0">HR leaders</span>
       <h3>Your top retention lever is pride.</h3>
       <p class="lede">Pride accounts for 25.8% of what culture explains about whether people stay. At the Best Workplaces™, 96.2% are proud to say where they work, against 60.0% at typical workplaces.</p>
-      <ol class="steps">
+      <ol class="nsteps">
         <li><span><b>Measure pride in your next survey.</b> Start with “I’m proud to tell others I work here.”</span></li>
         <li><span><b>Look closely at who disagrees.</b> 38% of people who strongly disagree say they are very unlikely to stay.</span></li>
         <li><span><b>Check that managers keep their word.</b> 92.5% at Best Workplaces™ say they do, against 49.6% at typical workplaces.</span></li>
       </ol>
       <a class="link" href="#">See how the Trust Index™ survey works</a>
     </article>
-    <article class="pcard who-card rv">
+    <article class="who rv">
       <span class="tag" style="align-self:flex-start;margin:0">CEOs and founders</span>
       <h3>Consistency is your fastest lever.</h3>
       <p class="lede">“Management’s actions match its words” ranks in the top three for its link to a great culture, at every company size and every age group. Pride, fairness and credibility all build on it.</p>
-      <ol class="steps">
+      <ol class="nsteps">
         <li><span><b>Ask your people about your top 20 leaders.</b> Do their actions match the culture you describe?</span></li>
         <li><span><b>Make it the agenda at your next offsite.</b> Align what leaders do with what they say.</span></li>
         <li><span><b>Track it between surveys.</b> A pulse check shows whether it is moving.</span></li>
@@ -587,41 +703,90 @@ p+p{margin-top:12px}
   </div>
 </div></section>
 
-<!-- ============ How it was built ============ -->
-<section class="sec" id="built" aria-labelledby="b-h"><div class="wrap">
+<!-- ============ Data and method ============ -->
+<section class="sec soft" id="data" aria-labelledby="d-h"><div class="wrap">
   <div class="head rv">
-    <span class="tag">Methodology</span>
-    <h2 class="h2" id="b-h">How this report was built.</h2>
+    <span class="tag">Data and method</span>
+    <h2 class="h2" id="d-h">How this report was built.</h2>
     <p class="intro">Two datasets sit behind this report: the survey that decided this year’s list, and a separate study of what predicts retention. Typical-workplace figures are our Australian national benchmark.<a class="fn" href="#fn1">1</a></p>
   </div>
-  <table class="mt rv">
-    <thead><tr><th>Dataset</th><th>What it is</th><th>Scale</th></tr></thead>
-    <tbody>
-      <tr><td>2026 Trust Index™ survey</td><td>The employee research that decided this year’s Best Workplaces™ list.</td><td>128,405 employees across Australia</td></tr>
-      <tr><td>Independent retention study</td><td>Research commissioned with an independent partner, testing which Trust Index™ themes best predict long-term retention.</td><td>140,251 Australian responses from 682 organisations, 2025 to 2026</td></tr>
-    </tbody>
-  </table>
+  <div class="tablewrap rv">
+    <table class="mt datasets">
+      <thead><tr><th scope="col">Dataset</th><th scope="col">What it is</th><th scope="col">Scale</th></tr></thead>
+      <tbody>
+        <tr><td>2026 Trust Index™ survey</td><td>The employee research that decided this year’s Best Workplaces™ list.</td><td>128,405 employees across Australia</td></tr>
+        <tr><td>Independent retention study</td><td>Research commissioned with an independent partner, testing which Trust Index™ themes best predict long-term retention.</td><td>140,251 Australian responses from 682 organisations, 2025 to 2026</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="tablewrap rv" style="margin-top:48px">
+    <table class="mt" id="alldata">
+      <caption>All figures in this report.</caption>
+      <thead><tr><th scope="col">Statement or measure</th><th scope="col">Group</th><th scope="col">Result</th><th scope="col">Compared with</th><th scope="col">Comparison result</th><th scope="col">Source</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Trust Index™ score (60 statements)</th><td>Best Workplaces™ in Australia</td><td class="n">93%</td><td>Typical Australian workplaces</td><td class="n">57.8%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Trust Index™ score (60 statements)</th><td>Great Place To Work® Certified™</td><td class="n">84.9%</td><td>Typical Australian workplaces</td><td class="n">57.8%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Pride’s share of what culture explains about retention</th><td>Australian employees</td><td class="n">25.8%</td><td>Other four themes</td><td class="n">Lower</td><td class="src">Independent retention study</td></tr>
+        <tr><th scope="row">“I’m proud to tell others I work here.”</th><td>Best Workplaces™</td><td class="n">96.2%</td><td>Typical Australian workplaces</td><td class="n">60.0%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Very unlikely to stay, among those who strongly disagree with “I’m proud to tell others I work here.”</th><td>Australian employees</td><td class="n">38%</td><td>—</td><td class="n">—</td><td class="src">Independent retention study</td></tr>
+        <tr><th scope="row">“I want to work here for a long time.”</th><td>Best Workplaces™</td><td class="n">91.7%</td><td>Typical Australian workplaces</td><td class="n">56.3%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“I would strongly endorse my company to friends and family.”</th><td>Best Workplaces™</td><td class="n">93.9%</td><td>Typical Australian workplaces</td><td class="n">54.1%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“I feel pride in what I accomplish here.”</th><td>Best Workplaces™</td><td class="n">94.6%</td><td>Typical Australian workplaces</td><td class="n">69.2%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“I feel I make a difference here.”</th><td>Best Workplaces™</td><td class="n">92.7%</td><td>Typical Australian workplaces</td><td class="n">64.6%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“My work has special meaning.”</th><td>Best Workplaces™</td><td class="n">88.7%</td><td>Typical Australian workplaces</td><td class="n">53.1%</td><td class="src">2026 Trust Index™ survey ³</td></tr>
+        <tr><th scope="row">“Management’s actions match its words.”</th><td>Best Workplaces™</td><td class="n">92.5%</td><td>Typical Australian workplaces</td><td class="n">49.6%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“I want to work here for a long time.”</th><td>Under-25s, Best Workplaces™</td><td class="n">86.1%</td><td>All Best Workplaces™ employees</td><td class="n">91.7%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“I feel I make a difference here.”</th><td>Under-25s, Best Workplaces™</td><td class="n">88.0%</td><td>Other ages, Best Workplaces™</td><td class="n">92.7%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“My work has special meaning.”</th><td>Under-25s, Best Workplaces™</td><td class="n">83.3%</td><td>Other ages, Best Workplaces™</td><td class="n">86.1%</td><td class="src">2026 Trust Index™ survey ³</td></tr>
+        <tr><th scope="row">“When you join the company, you are made to feel welcome.”</th><td>Under-25s, Best Workplaces™</td><td class="n">97.3%</td><td>Typical Australian workplaces</td><td class="n">69.2%</td><td class="src">2026 Trust Index™ survey ⁴</td></tr>
+        <tr><th scope="row">“I’m treated as a full member here regardless of my position.”</th><td>Under-25s, Best Workplaces™</td><td class="n">95.0%</td><td>Under-25s, typical workplaces</td><td class="n">64.2%</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">“Promotions go to those who best deserve them.”</th><td>Under-25s, Best Workplaces™</td><td class="n">89.3%</td><td>Typical Australian workplaces</td><td class="n">45.0%</td><td class="src">2026 Trust Index™ survey ⁴</td></tr>
+        <tr><th scope="row">“Managers avoid playing favourites.”</th><td>Under-25s, Best Workplaces™</td><td class="n">87.1%</td><td>Typical Australian workplaces</td><td class="n">43.4%</td><td class="src">2026 Trust Index™ survey ⁴</td></tr>
+        <tr><th scope="row">“Management involves people in decisions that affect their jobs.”</th><td>Under-25s, Best Workplaces™</td><td class="n">87.3%</td><td>Typical Australian workplaces</td><td class="n">45.2%</td><td class="src">2026 Trust Index™ survey ⁴</td></tr>
+        <tr><th scope="row">Top 5: treated fairly regardless of sexual orientation</th><td>Best Workplaces™</td><td class="n">96.0%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Top 5: physically safe place to work</th><td>Best Workplaces™</td><td class="n">95.5%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Top 5: treated fairly regardless of race</th><td>Best Workplaces™</td><td class="n">95.3%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Top 5: treated fairly regardless of gender</th><td>Best Workplaces™</td><td class="n">94.2%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Top 5: made to feel welcome when joining</th><td>Best Workplaces™</td><td class="n">93.9%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Lowest 5: fair share of the profits</th><td>Best Workplaces™</td><td class="n">59.9%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Lowest 5: paid fairly</th><td>Best Workplaces™</td><td class="n">70.3%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Lowest 5: work has special meaning</th><td>Best Workplaces™</td><td class="n">75.2%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey ³</td></tr>
+        <tr><th scope="row">Lowest 5: special and unique benefits</th><td>Best Workplaces™</td><td class="n">77.1%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+        <tr><th scope="row">Lowest 5: involved in decisions</th><td>Best Workplaces™</td><td class="n">77.9%</td><td>—</td><td class="n">—</td><td class="src">2026 Trust Index™ survey</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="cite rv">
+    <div>
+      <p id="citation">Great Place To Work® Australia (2026). Best Workplaces™ in Australia 2026: special insights report. https://greatplacetowork.com.au/reports/best-workplaces-insights/</p>
+    </div>
+    <div class="btns">
+      <button class="btn btn--sm btn--outline" type="button" id="copycite">Copy citation</button>
+      <button class="btn btn--sm btn--outline" type="button" id="csv">Download data (CSV)</button>
+    </div>
+  </div>
 </div></section>
 
-<!-- ============ FaqList (no marks in FAQs) ============ -->
-<section class="sec soft" aria-labelledby="f-h"><div class="wrap">
+<!-- ============ FAQ (no marks in FAQs) ============ -->
+<section class="sec" aria-labelledby="q-h"><div class="wrap">
   <div class="head center rv">
     <span class="tag">FAQs</span>
-    <h2 class="h2" id="f-h">Questions about the report.</h2>
+    <h2 class="h2" id="q-h">Questions about the report.</h2>
   </div>
   <div class="faq rv">
     <details open><summary>What exactly did you measure?</summary><div class="a"><p>We sent the same 60-statement survey to 128,405 employees across Australia. It measures trust across five themes: camaraderie, credibility, fairness, pride and respect. The Trust Index score is the average positive response across all 60 statements.</p></div></details>
-    <details><summary>What do you mean by pride?</summary><div class="a"><p>Pride is measured by three statements: “I’m proud to tell others I work here”, “I feel pride in what I accomplish here” and “My work has special meaning”. It shows whether people feel their work matters and would recommend their workplace. Of what the five themes explain about retention, pride accounts for 25.8%.</p></div></details>
-    <details><summary>Why should I trust Great Place To Work data?</summary><div class="a"><p>The Trust Index methodology has measured workplace culture for 30 years in more than 150 countries. For the retention findings, an independent research partner ran the analysis on 140,251 Australian responses from 682 organisations.</p></div></details>
-    <details><summary>Will Certification or a Best Workplaces place help us hire?</summary><div class="a"><p>It gives candidates proof of your culture that your employees provided. Australian job seekers say they are 15 times more likely to apply to a Great Place To Work Certified company.<a class="fn" href="#fn4">4</a></p></div></details>
+    <details open><summary>What do you mean by pride?</summary><div class="a"><p>Pride is measured by three statements: “I’m proud to tell others I work here”, “I feel pride in what I accomplish here” and “My work has special meaning”. Of what the five themes explain about retention, pride accounts for 25.8%.</p></div></details>
+    <details open><summary>Why should I trust Great Place To Work data?</summary><div class="a"><p>The Trust Index methodology has measured workplace culture for 30 years in more than 150 countries. For the retention findings, an independent research partner ran the analysis on 140,251 Australian responses from 682 organisations.</p></div></details>
+    <details open><summary>Will Certification or a Best Workplaces place help us hire?</summary><div class="a"><p>It gives candidates proof of your culture that your employees provided. Australian job seekers say they are 15 times more likely to apply to a Great Place To Work Certified company.<a class="fn" href="#fn5">5</a></p></div></details>
   </div>
 </div></section>
+</article>
 
 <!-- ============ Closer ============ -->
-<section class="closer" aria-labelledby="c-h"><div class="wrap">
+<section class="closer" aria-labelledby="cl-h"><div class="wrap">
   <div>
     <span class="tag">One survey. Insight and recognition.</span>
-    <h2 id="c-h">Become <span class="acc">Great.</span></h2>
+    <h2 id="cl-h">Become <span class="acc">Great.</span></h2>
     <p>One research-backed system and 30 years of global data, to build a high-trust, high-performing culture your people can be proud of.</p>
   </div>
   <div class="btns">
@@ -639,35 +804,87 @@ p+p{margin-top:12px}
     <div><b>Company</b><a href="#">Contact us</a><a href="#">Terms and conditions</a><a href="#">Global privacy policy</a><a href="#">Data processing</a></div>
   </div>
   <div class="notes">
-    <p id="fn1"><sup>1</sup>2026 Trust Index™ survey, 128,405 employees across Australia. Typical Australian workplace figures are the Great Place To Work® national benchmark.<span class="tbc">TBC · confirm benchmark definition</span></p>
+    <p id="fn1"><sup>1</sup>2026 Trust Index™ survey, 128,405 employees across Australia. Typical Australian workplace figures are the Great Place To Work® national benchmark.<span class="tbc">TBC · confirm benchmark definition and publish date</span></p>
     <p id="fn2"><sup>2</sup>Independent retention study, 140,251 Australian employee responses from 682 organisations, 2025 to 2026. The 38% is among employees who strongly disagree with “I’m proud to tell others I work here”.</p>
-    <p id="fn3"><sup>3</sup>Under review with the data owner: “My work has special meaning” is published as 88.7% (all Best Workplaces™ employees), 86.1% (all ages except under-25s) and 75.2% (bottom-five chart). The Gen Z comparison against 56.3% mixes an under-25 figure with an all-employee benchmark.<span class="tbc">TBC · data owner</span></p>
-    <p id="fn4"><sup>4</sup>Published figure, greatplacetowork.com.au/certification.</p>
+    <p id="fn3"><sup>3</sup>Under review with the data owner: “My work has special meaning” is published as 88.7% (all Best Workplaces™ employees), 86.1% (all ages except under-25s) and 75.2% (bottom-five chart).<span class="tbc">TBC · data owner</span></p>
+    <p id="fn4"><sup>4</sup>The published report compares these under-25 results with all employees at typical Australian workplaces, not under-25s only.<span class="tbc">TBC · confirm comparison group</span></p>
+    <p id="fn5"><sup>5</sup>Published figure, greatplacetowork.com.au/certification.</p>
     <p>We acknowledge the Traditional Owners of the land where we work and live, and pay our respects to Elders past, present and emerging. © 2026 Great Place To Work® Institute.</p>
   </div>
 </div></footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
 (function(){
-  document.body.classList.remove('no-js');
-  const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in','grow');io.unobserve(e.target)}}),{threshold:.15});
-  document.querySelectorAll('.rv').forEach(el=>reduce?el.classList.add('in','grow'):io.observe(el));
-  /* counters count up once */
-  if(!reduce){document.querySelectorAll('[data-count]').forEach(el=>{
-    const to=parseFloat(el.dataset.count),dp=String(el.dataset.count).includes('.')?1:0;let st;el.textContent=(0).toFixed(dp)+'%';
-    const run=t=>{st=st||t;const k=Math.min(1,(t-st)/1200),e=1-Math.pow(1-k,3);el.textContent=(to*e).toFixed(dp)+'%';if(k<1)requestAnimationFrame(run)};
-    new IntersectionObserver((es,o)=>{if(es[0].isIntersecting){requestAnimationFrame(run);o.disconnect()}},{threshold:.5}).observe(el);
-  })}
+  var d=document,b=d.body;b.classList.remove('no-js');b.classList.add('js');
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var $=function(s,r){return (r||d).querySelector(s)},$$=function(s,r){return Array.prototype.slice.call((r||d).querySelectorAll(s))};
+
+  /* reveal + grow (values are always in the HTML; motion only moves bars) */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in','grow');io.unobserve(e.target)}})},{threshold:.15});
+  $$('.rv').forEach(function(el){reduce?el.classList.add('in','grow'):io.observe(el)});
+
+  /* toast + clipboard */
+  var toast=$('#toast'),tt;
+  function say(m){toast.textContent=m;toast.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){toast.classList.remove('show')},1800)}
+  function copy(text,ok){(navigator.clipboard?navigator.clipboard.writeText(text):Promise.reject()).then(function(){say(ok)},function(){say('Copy is blocked here. Select the text instead.')})}
+  var base=location.href.split('#')[0];
+
+  /* copy finding: sentence + source + deep link */
+  $$('[data-copy]').forEach(function(btn){btn.addEventListener('click',function(){
+    var li=btn.closest('.finding');
+    copy($('p',li).textContent.trim()+' Source: '+$('.src',li).textContent.trim().replace(/\d$/,'')+' Great Place To Work® Australia. '+base+'#'+li.id,'Finding copied with its source');
+  })});
+  $('#copycite').addEventListener('click',function(){copy($('#citation').textContent.trim(),'Citation copied')});
+
+  /* CSV built from the visible table */
+  $('#csv').addEventListener('click',function(){
+    var rows=$$('#alldata tr').map(function(tr){return $$('th,td',tr).map(function(c){return '"'+c.textContent.trim().replace(/"/g,'""')+'"'}).join(',')});
+    var blob=new Blob(['﻿'+rows.join('\n')],{type:'text/csv'});
+    var a=d.createElement('a');a.href=URL.createObjectURL(blob);a.download='best-workplaces-australia-2026-insights.csv';a.click();
+    setTimeout(function(){URL.revokeObjectURL(a.href)},1000);say('Data downloaded');
+  });
+
+  /* comparison chart: sort + gap */
+  var cmp=$('#cmp');
+  $$('[data-sort]').forEach(function(btn){btn.addEventListener('click',function(){
+    $$('[data-sort]').forEach(function(x){x.setAttribute('aria-pressed',x===btn)});
+    var key=btn.dataset.sort;
+    $$('li',cmp).sort(function(x,y){
+      var fx=key==='gap'?x.dataset.a-x.dataset.b:+x.dataset.a, fy=key==='gap'?y.dataset.a-y.dataset.b:+y.dataset.a;return fy-fx;
+    }).forEach(function(li){cmp.appendChild(li)});
+  })});
+  var gapbtn=$('#gapbtn'),chart=$('#cmp-chart');
+  gapbtn.addEventListener('click',function(){var on=chart.classList.toggle('show-gap');gapbtn.setAttribute('aria-pressed',on);gapbtn.textContent=on?'Hide the gap':'Show the gap'});
+
+  /* dumbbells: positions from data attributes (axis 40% to 100%) */
+  function pos(v){return Math.max(0,Math.min(100,(v-40)/60*100))}
+  $$('.db li').forEach(function(li){
+    var a=+li.dataset.a,bv=+li.dataset.b,t=$('.track',li),lo=Math.min(a,bv),hi=Math.max(a,bv);
+    t.innerHTML='<span class="line" style="left:'+pos(lo)+'%;width:'+(pos(hi)-pos(lo))+'%"></span><span class="dot" style="left:'+pos(bv)+'%"></span><span class="dot us" style="left:'+pos(a)+'%"></span>';
+  });
+
+  /* pride sticky story */
+  var steps=$$('.story .step'),dots=$$('.pin .dots i');
+  function show(i){
+    var s=steps[i].dataset;
+    $('#pin-q').textContent=s.q;$('#pin-big').textContent=s.big;$('#pin-lbl').textContent=s.lbl;
+    var has=!!s.a;$('#pin-b1').parentNode.hidden=!has;$('#pin-r2').hidden=!has;
+    if(has){$('#pin-v1').textContent=s.a+'%';$('#pin-v2').textContent=s.b+'%';
+      $('#pin-b1').style.setProperty('--w',s.a+'%');$('#pin-b2').style.setProperty('--w',s.b+'%');}
+    dots.forEach(function(dt,j){dt.classList.toggle('on',j===i)});
+  }
+  show(0);$('.pin').classList.add('grow');
+  var so=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)show(steps.indexOf(e.target))})},{rootMargin:'-45% 0px -45% 0px'});
+  steps.forEach(function(s){so.observe(s)});
+
   /* compact nav + sub nav + scroll spy */
-  const top=document.getElementById('top'),sub=document.getElementById('sub'),links=[...sub.querySelectorAll('nav a')];
-  const secs=links.map(a=>document.querySelector(a.getAttribute('href')));
-  let tick=false;
-  addEventListener('scroll',()=>{if(tick)return;tick=true;requestAnimationFrame(()=>{
-    const c=scrollY>80;top.classList.toggle('compact',c);sub.style.top=(c?56:72)+'px';
-    let cur=-1;secs.forEach((s,i)=>{if(s&&s.getBoundingClientRect().top<=170)cur=i});
-    links.forEach((a,i)=>a.classList.toggle('on',i===cur));
-    tick=false})},{passive:true});
+  var top=$('#top'),sub=$('#sub'),links=$$('nav a',sub),secs=links.map(function(a){return d.querySelector(a.getAttribute('href'))});
+  var tick=false;
+  addEventListener('scroll',function(){if(tick)return;tick=true;requestAnimationFrame(function(){
+    var c=scrollY>80;top.classList.toggle('compact',c);sub.style.top=(c?56:72)+'px';
+    var cur=-1;secs.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<=170)cur=i});
+    links.forEach(function(a,i){a.classList.toggle('on',i===cur)});tick=false})},{passive:true});
 })();
 </script>
 </body>
